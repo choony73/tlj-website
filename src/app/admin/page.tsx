@@ -2,6 +2,7 @@ import Link from 'next/link';
 import {getSession} from '@/lib/auth';
 import {isDbConfigured} from '@/lib/db';
 import {redirect} from 'next/navigation';
+import SeedButton from '@/components/admin/SeedButton';
 
 export const dynamic = 'force-dynamic';
 
@@ -47,6 +48,8 @@ export default async function AdminDashboard() {
           <p className="mt-1 text-sm">영업시간·공지·갤러리·FAQ (준비 중)</p>
         </div>
       </div>
+
+      {isDbConfigured && <SeedButton />}
 
       <form action="/api/admin/logout" method="POST" className="mt-8">
         <button
