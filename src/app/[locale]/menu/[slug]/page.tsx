@@ -2,22 +2,19 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {Link} from '@/i18n/navigation';
 import {
-  categories,
+  categorySlugs,
+  menuItemSlugs,
   categoryName,
   formatPrice,
   getCategory,
   getItem,
   getItemsByCategory,
   itemDescription,
-  itemName,
-  menuItems
+  itemName
 } from '@/lib/menu';
 
 export function generateStaticParams() {
-  const slugs = [
-    ...categories.map((c) => c.slug),
-    ...menuItems.map((i) => i.slug)
-  ];
+  const slugs = [...categorySlugs, ...menuItemSlugs];
   return slugs.map((slug) => ({slug}));
 }
 
@@ -30,9 +27,9 @@ export default async function MenuSlugPage({
   setRequestLocale(locale);
   const t = await getTranslations('menu');
 
-  const category = getCategory(slug);
+  const category = await getCategory(slug);
   if (category) {
-    const items = getItemsByCategory(slug);
+    const items = await getItemsByCategory(slug);
     return (
       <div className="mx-auto max-w-6xl px-4 py-12">
         <Link href="/menu" className="text-sm text-red-700 hover:underline">
@@ -71,9 +68,9 @@ export default async function MenuSlugPage({
     );
   }
 
-  const item = getItem(slug);
+  const item = await getItem(slug);
   if (item) {
-    const cat = getCategory(item.category);
+    const cat = await getCategory(item.category);
     return (
       <div className="mx-auto max-w-3xl px-4 py-12">
         <Link

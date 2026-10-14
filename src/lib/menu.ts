@@ -1,3 +1,7 @@
+// 메뉴 데이터 접근 레이어
+// - DATABASE_URL이 설정되어 있으면 Postgres(Neon)에서 읽고,
+// - 없으면 src/data/menu.json에서 읽습니다 (로컬/미리보기용).
+import {sql, isDbConfigured} from './db';
 import data from '@/data/menu.json';
 
 export interface Category {
@@ -18,21 +22,59 @@ export interface MenuItem {
   available: boolean;
 }
 
-export const categories: Category[] = data.categories;
-export const menuItems: MenuItem[] = data.items;
+const jsonCategories: Category[] = data.categories;
+const jsonItems: MenuItem[] = data.items as MenuItem[];
 
-export function getCategory(slug: string): Category | undefined {
-  return categories.find((c) => c.slug === slug);
+export async function getCategories(): Promise<Category[]> {
+  if (isDbConfigured && sql) {
+    const rows = await sql`
+      SELECT c.slug, c.name_fr, c.name_en, COUNT(i.slug)::int AS item_count
+      FROM categories c
+      LEFT JOIN menu_items i ON i.category = c.slug
+      GROUP BY c.slug
+      ORDER BY c.sort_order
+    `;
+    return rows as unknown as Category[];
+  }
+  return jsonCategories;
 }
 
-export function getItem(slug: string): MenuItem | undefined {
-  return menuItems.find((i) => i.slug === slug);
+export async function getMenuItems(): Promise<MenuItem[]> {
+  if (isDbConfigured && sql) {
+    const rows = await sql`
+      SELECT slug, category, name_fr, name_en,
+             price_cad::float AS price_cad,
+             description_fr, description_en, available
+      FROM menu_items
+      ORDER BY category, sort_order
+    `;
+    return rows as unknown as MenuItem[];
+  }
+  return jsonItems;
 }
 
-export function getItemsByCategory(categorySlug: string): MenuItem[] {
-  return menuItems.filter((i) => i.category === categorySlug);
+export async function getCategory(slug: string): Promise<Category | undefined> {
+  const cats = await getCategories();
+  return cats.find((c) => c.slug === slug);
 }
 
+export async function getItem(slug: string): Promise<MenuItem | undefined> {
+  const items = await getMenuItems();
+  return items.find((i) => i.slug === slug);
+}
+
+export async function getItemsByCategory(
+  categorySlug: string
+): Promise<MenuItem[]> {
+  const items = await getMenuItems();
+  return items.filter((i) => i.category === categorySlug);
+}
+
+// ---- 정적 생성용 (빌드 시점 slug 목록) ----
+export const categorySlugs: string[] = jsonCategories.map((c) => c.slug);
+export const menuItemSlugs: string[] = jsonItems.map((i) => i.slug);
+
+// ---- 표시 헬퍼 (동기) ----
 export function itemName(item: MenuItem, locale: string): string {
   if (locale === 'en' && item.name_en) return item.name_en;
   return item.name_fr;

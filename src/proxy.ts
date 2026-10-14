@@ -1,9 +1,26 @@
 import createMiddleware from 'next-intl/middleware';
+import {NextRequest, NextResponse} from 'next/server';
 import {routing} from './i18n/routing';
+import {verifySessionToken, COOKIE_NAME} from './lib/auth';
 
-export default createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
+
+export default async function proxy(request: NextRequest) {
+  const {pathname} = request.nextUrl;
+
+  // 관리자 영역 보호 (로그인 페이지는 제외)
+  if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+    const token = request.cookies.get(COOKIE_NAME)?.value;
+    if (!(await verifySessionToken(token))) {
+      return NextResponse.redirect(new URL('/admin/login', request.url));
+    }
+    return NextResponse.next();
+  }
+
+  return intlMiddleware(request);
+}
 
 export const config = {
-  // locale 처리가 필요 없는 경로 제외: api, 정적 파일, 관리자
-  matcher: '/((?!api|_next|_vercel|admin|.*\\..*).*)'
+  // api, 정적 파일 제외. /admin 은 위에서 직접 처리.
+  matcher: '/((?!api|_next|_vercel|.*\\..*).*)'
 };

@@ -1,6 +1,6 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
-import {categories, categoryName} from '@/lib/menu';
+import {getCategories, categoryName} from '@/lib/menu';
 
 export default async function MenuPage({
   params
@@ -10,6 +10,7 @@ export default async function MenuPage({
   const {locale} = await params;
   setRequestLocale(locale);
   const t = await getTranslations('menu');
+  const categories = await getCategories();
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
