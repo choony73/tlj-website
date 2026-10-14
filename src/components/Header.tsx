@@ -16,14 +16,15 @@ export default async function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-neutral-800 bg-neutral-950/95 text-white backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="text-xl font-bold tracking-tight">
-          Tous Les Jours <span className="font-normal text-neutral-500">Sushi & Korean</span>
+          Tous Les Jours{' '}
+          <span className="font-normal text-amber-400">Sushi & Korean</span>
         </Link>
-        <nav className="hidden items-center gap-5 text-sm font-medium md:flex">
+        <nav className="hidden items-center gap-5 text-sm font-medium text-neutral-300 md:flex">
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-red-700">
+            <Link key={l.href} href={l.href} className="hover:text-white">
               {l.label}
             </Link>
           ))}
@@ -33,7 +34,7 @@ export default async function Header() {
           <CartButton />
           <Link
             href="/commander"
-            className="rounded-full bg-red-700 px-4 py-2 text-sm font-semibold text-white hover:bg-red-800"
+            className="rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-neutral-950 hover:bg-amber-300"
           >
             {t('order')}
           </Link>

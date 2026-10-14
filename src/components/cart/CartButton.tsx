@@ -8,7 +8,7 @@ export default function CartButton() {
   return (
     <Link
       href="/commander"
-      className="relative rounded-full border border-neutral-300 px-3 py-1 text-sm font-semibold hover:bg-neutral-100"
+      className="relative rounded-full border border-neutral-600 px-3 py-1 text-sm font-semibold text-white hover:bg-neutral-800"
       aria-label="Panier"
     >
       🛒

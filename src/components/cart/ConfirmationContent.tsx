@@ -47,7 +47,7 @@ export default function ConfirmationContent() {
           <p className="text-5xl">✅</p>
           <h1 className="mt-4 text-2xl font-bold">{t('orderConfirmed')}</h1>
           <p className="mt-2 text-neutral-600">{t('thankYou')}</p>
-          <p className="mt-6 rounded-2xl bg-neutral-50 p-4">
+          <p className="mt-6 rounded-2xl bg-neutral-50 p-4 text-neutral-900">
             {t('orderNumber')}:{' '}
             <span className="text-xl font-bold">{orderId}</span>
           </p>

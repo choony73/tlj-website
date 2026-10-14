@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={() => router.replace(pathname, {locale: other})}
-      className="rounded-full border border-neutral-300 px-3 py-1 text-sm font-semibold tracking-wide hover:bg-neutral-100"
+      className="rounded-full border border-neutral-600 px-3 py-1 text-sm font-semibold tracking-wide text-white hover:bg-neutral-800"
       aria-label={locale === 'fr' ? 'Switch to English' : 'Passer au français'}
     >
       {other.toUpperCase()}

@@ -85,7 +85,7 @@ export default function SuiviCommandePage() {
         <div className="mt-6 rounded-2xl border p-6">
           <div className="flex items-center justify-between">
             <p className="font-bold">{order.id}</p>
-            <span className="rounded-full bg-neutral-100 px-3 py-1 text-sm font-medium">
+            <span className="rounded-full bg-neutral-100 px-3 py-1 text-sm font-medium text-neutral-900">
               {statusLabel[order.status] || order.status}
             </span>
           </div>

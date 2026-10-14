@@ -235,7 +235,7 @@ export default function CheckoutFlow() {
             ))}
           </div>
 
-          <div className="mt-6 space-y-2 rounded-2xl bg-neutral-50 p-5 text-sm">
+          <div className="mt-6 space-y-2 rounded-2xl bg-neutral-50 p-5 text-sm text-neutral-900">
             <div className="flex justify-between">
               <span>{t('subtotal')}</span>
               <span>{fmt(subtotal)}</span>
