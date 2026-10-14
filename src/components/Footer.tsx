@@ -25,6 +25,7 @@ export default async function Footer() {
           <ul className="mt-2 space-y-1 text-sm">
             <li><Link href="/menu" className="hover:text-white">{tNav('menu')}</Link></li>
             <li><Link href="/livraison" className="hover:text-white">{tNav('delivery')}</Link></li>
+            <li><Link href="/suivi-commande" className="hover:text-white">{tNav('trackOrder')}</Link></li>
             <li><Link href="/faq" className="hover:text-white">{tNav('faq')}</Link></li>
           </ul>
         </div>

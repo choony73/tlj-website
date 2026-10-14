@@ -41,6 +41,25 @@ await sql`
     updated_at TIMESTAMPTZ DEFAULT NOW()
   )
 `;
+await sql`
+  CREATE TABLE IF NOT EXISTS orders (
+    id TEXT PRIMARY KEY,
+    items JSONB NOT NULL,
+    subtotal_cad NUMERIC(10,2) NOT NULL,
+    delivery_fee_cad NUMERIC(10,2) NOT NULL DEFAULT 0,
+    total_cad NUMERIC(10,2) NOT NULL,
+    fulfillment TEXT NOT NULL DEFAULT 'pickup',
+    customer_name TEXT NOT NULL,
+    customer_phone TEXT NOT NULL,
+    customer_email TEXT,
+    delivery_address TEXT,
+    notes TEXT,
+    status TEXT NOT NULL DEFAULT 'pending',
+    stripe_payment_intent TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+  )
+`;
 
 for (const [idx, cat] of data.categories.entries()) {
   await sql`

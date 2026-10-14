@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+import CartButton from './cart/CartButton';
 
 export default async function Header() {
   const t = await getTranslations('nav');
@@ -29,6 +30,7 @@ export default async function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
+          <CartButton />
           <Link
             href="/commander"
             className="rounded-full bg-red-700 px-4 py-2 text-sm font-semibold text-white hover:bg-red-800"

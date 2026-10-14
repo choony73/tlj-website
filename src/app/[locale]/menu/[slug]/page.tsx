@@ -1,6 +1,7 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {Link} from '@/i18n/navigation';
+import AddToCartButton from '@/components/cart/AddToCartButton';
 import {
   categorySlugs,
   menuItemSlugs,
@@ -96,12 +97,11 @@ export default async function MenuSlugPage({
           {formatPrice(item.price_cad, locale)}
         </p>
         <div className="mt-8">
-          <Link
-            href="/commander"
-            className="rounded-full bg-red-700 px-6 py-3 font-semibold text-white hover:bg-red-800"
-          >
-            {locale === 'fr' ? 'Ajouter au panier' : 'Add to cart'}
-          </Link>
+          <AddToCartButton
+            slug={item.slug}
+            label={locale === 'fr' ? 'Ajouter au panier' : 'Add to cart'}
+            addedLabel={locale === 'fr' ? 'Ajouté ✓' : 'Added ✓'}
+          />
         </div>
       </div>
     );

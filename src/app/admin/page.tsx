@@ -33,6 +33,15 @@ export default async function AdminDashboard() {
             메뉴 추가·수정·가격 변경·품절 표시
           </p>
         </Link>
+        <Link
+          href="/admin/commandes"
+          className="rounded-2xl border p-6 transition hover:border-neutral-900 hover:shadow-md"
+        >
+          <p className="text-lg font-semibold">주문 관리</p>
+          <p className="mt-1 text-sm text-neutral-500">
+            들어온 주문 확인·상태 변경(조리 중·완료 등)
+          </p>
+        </Link>
         <div className="rounded-2xl border border-dashed p-6 text-neutral-400">
           <p className="text-lg font-semibold">콘텐츠 관리</p>
           <p className="mt-1 text-sm">영업시간·공지·갤러리·FAQ (준비 중)</p>

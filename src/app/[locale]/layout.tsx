@@ -5,6 +5,7 @@ import {routing} from '@/i18n/routing';
 import {Geist, Geist_Mono} from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import {CartProvider} from '@/components/cart/CartProvider';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -42,9 +43,11 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <CartProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </CartProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -29,7 +29,8 @@
     "gallery": "Gallery",
     "home": "Home",
     "menu": "Menu",
-    "order": "Order"
+    "order": "Order",
+    "trackOrder": "Track my order"
   },
   "faq": {
     "title": "FAQ",
@@ -184,5 +185,35 @@
       "Atmosphere"
     ],
     "empty": "Photos coming soon."
+  },
+  "cart": {
+    "title": "Order",
+    "empty": "Your cart is empty.",
+    "browseMenu": "View the menu",
+    "yourCart": "Your cart",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Delivery fee",
+    "total": "Total",
+    "free": "Free",
+    "fulfillment": "Fulfillment",
+    "pickup": "Pickup at the restaurant",
+    "delivery": "Home delivery",
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email (optional)",
+    "address": "Delivery address",
+    "notes": "Allergies or notes (optional)",
+    "continueToPayment": "Continue to payment",
+    "pay": "Pay",
+    "processing": "Processing…",
+    "orderConfirmed": "Order confirmed!",
+    "orderNumber": "Order number",
+    "thankYou": "Thank you! Your payment was accepted. We're preparing your order.",
+    "trackOrder": "Track my order",
+    "backHome": "Back to home",
+    "paymentFailed": "Payment failed. Please try again.",
+    "dbRequired": "Online ordering will be available once the database is connected.",
+    "stripeRequired": "Online payment will be available once Stripe is configured."
   }
 }

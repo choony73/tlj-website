@@ -29,7 +29,8 @@
     "gallery": "Galerie",
     "home": "Accueil",
     "menu": "Menu",
-    "order": "Commander"
+    "order": "Commander",
+    "trackOrder": "Suivre ma commande"
   },
   "faq": {
     "title": "FAQ",
@@ -184,5 +185,35 @@
       "Ambiance"
     ],
     "empty": "Les photos arrivent bientôt."
+  },
+  "cart": {
+    "title": "Commander",
+    "empty": "Votre panier est vide.",
+    "browseMenu": "Voir le menu",
+    "yourCart": "Votre panier",
+    "remove": "Retirer",
+    "subtotal": "Sous-total",
+    "deliveryFee": "Frais de livraison",
+    "total": "Total",
+    "free": "Gratuit",
+    "fulfillment": "Mode de réception",
+    "pickup": "Cueillette au restaurant",
+    "delivery": "Livraison à domicile",
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Courriel (optionnel)",
+    "address": "Adresse de livraison",
+    "notes": "Allergies ou notes (optionnel)",
+    "continueToPayment": "Continuer vers le paiement",
+    "pay": "Payer",
+    "processing": "Traitement en cours…",
+    "orderConfirmed": "Commande confirmée !",
+    "orderNumber": "Numéro de commande",
+    "thankYou": "Merci ! Votre paiement a été accepté. Nous préparons votre commande.",
+    "trackOrder": "Suivre ma commande",
+    "backHome": "Retour à l'accueil",
+    "paymentFailed": "Le paiement a échoué. Veuillez réessayer.",
+    "dbRequired": "La commande en ligne sera disponible une fois la base de données connectée.",
+    "stripeRequired": "Le paiement en ligne sera disponible une fois Stripe configuré."
   }
 }

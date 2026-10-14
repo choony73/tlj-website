@@ -8,11 +8,13 @@ const intlMiddleware = createMiddleware(routing);
 export default async function proxy(request: NextRequest) {
   const {pathname} = request.nextUrl;
 
-  // 관리자 영역 보호 (로그인 페이지는 제외)
-  if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
-    const token = request.cookies.get(COOKIE_NAME)?.value;
-    if (!(await verifySessionToken(token))) {
-      return NextResponse.redirect(new URL('/admin/login', request.url));
+  // 관리자 영역: 로그인 페이지 통과, 나머지는 세션 검사 후 통과 (intl 미들웨어 제외)
+  if (pathname.startsWith('/admin')) {
+    if (pathname !== '/admin/login') {
+      const token = request.cookies.get(COOKIE_NAME)?.value;
+      if (!(await verifySessionToken(token))) {
+        return NextResponse.redirect(new URL('/admin/login', request.url));
+      }
     }
     return NextResponse.next();
   }
