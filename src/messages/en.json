@@ -104,5 +104,85 @@
         ]
       }
     ]
+  },
+  "delivery": {
+    "title": "Delivery",
+    "subtitle": "Simple & Fast",
+    "steps": [
+      {
+        "t": "Place your order",
+        "d": "Order online on our site and pay by card."
+      },
+      {
+        "t": "Call us",
+        "d": "Call (506) 532-0820 to confirm your delivery."
+      },
+      {
+        "t": "Receive your order",
+        "d": "We deliver straight to your door."
+      }
+    ],
+    "zonesTitle": "We deliver to:",
+    "zones": [
+      "Shediac",
+      "Cap-Pelé",
+      "Pointe-du-Chêne"
+    ],
+    "zonesNote": "Ready in 15 to 30 minutes depending on your order.",
+    "secure": "Secure payments via Stripe"
+  },
+  "findUs": {
+    "title": "Find Us",
+    "addressTitle": "Address",
+    "hoursTitle": "Hours",
+    "parkingTitle": "Parking",
+    "parking": "Free parking available in front of the restaurant and on nearby streets.",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "closed": "Closed"
+  },
+  "about": {
+    "title": "About",
+    "heading": "The art of sushi, the passion of Korea",
+    "intro": "Discover the story behind every dish we lovingly prepare in Shediac.",
+    "storyTitle": "How it all started",
+    "story": "TLJ Sushi & Korean was born from a deep passion for authentic Asian cuisine. Located in Shediac, in the heart of New Brunswick, we offer a unique culinary experience blending the delicate art of Japanese sushi with the bold flavours of Korean cuisine. Our chef combines traditional techniques with fresh ingredients, carefully selected every day. Every dish is prepared to order.",
+    "valuesTitle": "Our Values",
+    "values": [
+      {
+        "t": "Homemade",
+        "d": "Every dish is carefully prepared in our kitchen, with no shortcuts or compromises."
+      },
+      {
+        "t": "Fresh Ingredients",
+        "d": "Fresh fish delivered daily, seasonal vegetables and quality products."
+      },
+      {
+        "t": "Fast Service",
+        "d": "Your order ready in 15 to 30 minutes, for takeout or delivery."
+      },
+      {
+        "t": "Warm Welcome",
+        "d": "A passionate team that greets you with a smile, every visit."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Discover our restaurant, our atmosphere and our dishes in pictures.",
+    "filters": [
+      "All",
+      "Our restaurant",
+      "Our dishes",
+      "Atmosphere"
+    ],
+    "empty": "Photos coming soon."
   }
 }

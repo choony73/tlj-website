@@ -104,5 +104,85 @@
         ]
       }
     ]
+  },
+  "delivery": {
+    "title": "Livraison",
+    "subtitle": "Simple & Rapide",
+    "steps": [
+      {
+        "t": "Passez votre commande",
+        "d": "Commandez en ligne sur notre site et payez par carte."
+      },
+      {
+        "t": "Appelez-nous",
+        "d": "Appelez le (506) 532-0820 pour confirmer votre livraison."
+      },
+      {
+        "t": "Recevez votre commande",
+        "d": "Nous vous livrons directement à votre porte."
+      }
+    ],
+    "zonesTitle": "Nous livrons à :",
+    "zones": [
+      "Shediac",
+      "Cap-Pelé",
+      "Pointe-du-Chêne"
+    ],
+    "zonesNote": "Prêt en 15 à 30 minutes selon la commande.",
+    "secure": "Paiements sécurisés via Stripe"
+  },
+  "findUs": {
+    "title": "Nous trouver",
+    "addressTitle": "Adresse",
+    "hoursTitle": "Horaires",
+    "parkingTitle": "Stationnement",
+    "parking": "Stationnement gratuit disponible devant le restaurant et dans les rues avoisinantes.",
+    "days": [
+      "Lundi",
+      "Mardi",
+      "Mercredi",
+      "Jeudi",
+      "Vendredi",
+      "Samedi",
+      "Dimanche"
+    ],
+    "closed": "Fermé"
+  },
+  "about": {
+    "title": "À propos",
+    "heading": "L'art du sushi, la passion coréenne",
+    "intro": "Découvrez l'histoire derrière chaque plat que nous préparons avec amour à Shediac.",
+    "storyTitle": "Comment tout a commencé",
+    "story": "TLJ Sushi & Korean est né d'une passion profonde pour la cuisine asiatique authentique. Installés à Shediac, au cœur du Nouveau-Brunswick, nous offrons une expérience culinaire unique, mêlant l'art délicat du sushi japonais aux saveurs audacieuses de la cuisine coréenne. Notre chef combine des techniques traditionnelles avec des ingrédients frais, sélectionnés avec soin chaque jour. Chaque plat est préparé à la commande.",
+    "valuesTitle": "Nos Valeurs",
+    "values": [
+      {
+        "t": "Fait Maison",
+        "d": "Chaque plat est préparé avec soin dans notre cuisine, sans raccourci ni compromis."
+      },
+      {
+        "t": "Ingrédients Frais",
+        "d": "Poisson frais livré quotidiennement, légumes de saison et produits de qualité."
+      },
+      {
+        "t": "Service Rapide",
+        "d": "Votre commande prête en 15 à 30 minutes, pour emporter ou en livraison."
+      },
+      {
+        "t": "Accueil Chaleureux",
+        "d": "Une équipe passionnée qui vous accueille avec le sourire, à chaque visite."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galerie Photos",
+    "subtitle": "Découvrez notre restaurant, notre ambiance et nos plats en images.",
+    "filters": [
+      "Tout",
+      "Notre restaurant",
+      "Nos plats",
+      "Ambiance"
+    ],
+    "empty": "Les photos arrivent bientôt."
   }
 }
