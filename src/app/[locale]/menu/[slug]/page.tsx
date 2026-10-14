@@ -1,0 +1,114 @@
+import {getTranslations, setRequestLocale} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import {Link} from '@/i18n/navigation';
+import {
+  categories,
+  categoryName,
+  formatPrice,
+  getCategory,
+  getItem,
+  getItemsByCategory,
+  itemDescription,
+  itemName,
+  menuItems
+} from '@/lib/menu';
+
+export function generateStaticParams() {
+  const slugs = [
+    ...categories.map((c) => c.slug),
+    ...menuItems.map((i) => i.slug)
+  ];
+  return slugs.map((slug) => ({slug}));
+}
+
+export default async function MenuSlugPage({
+  params
+}: {
+  params: Promise<{locale: string; slug: string}>;
+}) {
+  const {locale, slug} = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('menu');
+
+  const category = getCategory(slug);
+  if (category) {
+    const items = getItemsByCategory(slug);
+    return (
+      <div className="mx-auto max-w-6xl px-4 py-12">
+        <Link href="/menu" className="text-sm text-red-700 hover:underline">
+          ← {t('backToMenu')}
+        </Link>
+        <h1 className="mt-2 text-3xl font-bold">
+          {categoryName(category, locale)}
+        </h1>
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {items.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/menu/${item.slug}`}
+              className="flex items-start justify-between gap-4 rounded-2xl border p-5 transition hover:border-red-700 hover:shadow-md"
+            >
+              <div>
+                <p className="font-semibold">{itemName(item, locale)}</p>
+                {itemDescription(item, locale) && (
+                  <p className="mt-1 text-sm text-neutral-600">
+                    {itemDescription(item, locale)}
+                  </p>
+                )}
+                {!item.available && (
+                  <p className="mt-1 text-sm font-medium text-red-700">
+                    {locale === 'fr' ? 'Épuisé' : 'Sold out'}
+                  </p>
+                )}
+              </div>
+              <p className="shrink-0 font-bold">
+                {formatPrice(item.price_cad, locale)}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const item = getItem(slug);
+  if (item) {
+    const cat = getCategory(item.category);
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-12">
+        <Link
+          href={cat ? `/menu/${cat.slug}` : '/menu'}
+          className="text-sm text-red-700 hover:underline"
+        >
+          ← {t('backToMenu')}
+        </Link>
+        <h1 className="mt-2 text-3xl font-bold">
+          {itemName(item, locale)}
+        </h1>
+        {cat && (
+          <p className="mt-1 text-sm text-neutral-500">
+            {categoryName(cat, locale)}
+          </p>
+        )}
+        {itemDescription(item, locale) && (
+          <p className="mt-4 text-neutral-700">
+            {itemDescription(item, locale)}
+          </p>
+        )}
+        <p className="mt-6 text-2xl font-bold">
+          {formatPrice(item.price_cad, locale)}
+        </p>
+        <div className="mt-8">
+          <Link
+            href="/commander"
+            className="rounded-full bg-red-700 px-6 py-3 font-semibold text-white hover:bg-red-800"
+          >
+            {locale === 'fr' ? 'Ajouter au panier' : 'Add to cart'}
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  notFound();
+}

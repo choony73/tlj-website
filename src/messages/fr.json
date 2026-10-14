@@ -1,0 +1,108 @@
+{
+  "common": {
+    "address": "11 Rue Mill, Shediac, NB E4P 1N6",
+    "allRights": "Tous droits réservés.",
+    "email": "contact@tljsushi.ca",
+    "phone": "(506) 532-0820"
+  },
+  "footer": {
+    "hours": "Heures d'ouverture",
+    "hoursDetail": "Mar–Dim : 11h30 – 20h00 · Lun : fermé"
+  },
+  "hero": {
+    "ctaMenu": "Voir le menu",
+    "ctaOrder": "Commander en ligne",
+    "subtitle": "Sushis frais et cuisine coréenne authentique à Shediac, Nouveau-Brunswick."
+  },
+  "menu": {
+    "backToMenu": "Retour au menu",
+    "categories": "Catégories",
+    "items": "plats",
+    "subtitle": "Sushis frais et plats coréens authentiques, préparés chaque jour.",
+    "title": "Notre Menu"
+  },
+  "nav": {
+    "about": "À propos",
+    "delivery": "Livraison",
+    "faq": "FAQ",
+    "findUs": "Nous trouver",
+    "gallery": "Galerie",
+    "home": "Accueil",
+    "menu": "Menu",
+    "order": "Commander"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Tout ce que vous devez savoir avant de commander.",
+    "groups": [
+      {
+        "category": "Commande en ligne",
+        "items": [
+          {
+            "q": "Comment passer une commande en ligne ?",
+            "a": "Rendez-vous sur notre page Menu, ajoutez vos plats au panier, puis suivez les étapes de paiement. Vous recevrez un courriel de confirmation avec votre numéro de commande."
+          },
+          {
+            "q": "Puis-je modifier ou annuler ma commande après l'avoir passée ?",
+            "a": "Contactez-nous rapidement par téléphone au (506) 532-0820. Si la préparation n'a pas encore commencé, nous ferons notre possible pour la modifier."
+          },
+          {
+            "q": "Quels sont vos horaires de commande ?",
+            "a": "Vous pouvez commander en ligne pendant nos heures d'ouverture : mardi à dimanche, de 11h30 à 20h00."
+          }
+        ]
+      },
+      {
+        "category": "Livraison & Cueillette",
+        "items": [
+          {
+            "q": "Offrez-vous la livraison ?",
+            "a": "Oui ! Nous livrons à Shediac, Cap-Pelé, Pointe-du-Chêne et les environs. Les zones et les frais sont affichés lors de la commande. La cueillette au restaurant est aussi possible."
+          },
+          {
+            "q": "Combien de temps prend la livraison ?",
+            "a": "En général, comptez 30 à 45 minutes selon votre distance et l'achalandage."
+          },
+          {
+            "q": "Y a-t-il un minimum de commande pour la livraison ?",
+            "a": "Le montant minimum pour la livraison est affiché sur la page de commande et varie selon votre zone."
+          }
+        ]
+      },
+      {
+        "category": "Allergènes & Alimentaire",
+        "items": [
+          {
+            "q": "Comment signaler une allergie alimentaire ?",
+            "a": "Lors de la commande, un champ est prévu pour indiquer vos allergies ou intolérances. L'information est transmise directement en cuisine."
+          },
+          {
+            "q": "Vos plats contiennent-ils du gluten ?",
+            "a": "Certains plats en contiennent (sauce soja, panure, etc.). Nous proposons des options sans gluten — n'hésitez pas à nous contacter."
+          },
+          {
+            "q": "Les ingrédients sont-ils frais ?",
+            "a": "Absolument. Notre poisson est livré frais quotidiennement et tous nos plats sont préparés à la commande."
+          }
+        ]
+      },
+      {
+        "category": "Paiement",
+        "items": [
+          {
+            "q": "Quels moyens de paiement acceptez-vous ?",
+            "a": "En ligne : cartes de crédit et de débit via Stripe (Visa, Mastercard, Amex). Au restaurant : comptant et Interac."
+          },
+          {
+            "q": "Le paiement en ligne est-il sécurisé ?",
+            "a": "Oui, tous les paiements sont traités par Stripe. Vos informations bancaires ne sont jamais stockées sur nos serveurs."
+          },
+          {
+            "q": "Puis-je obtenir un remboursement ?",
+            "a": "En cas de problème avec votre commande, contactez-nous dans les 24 heures et nous examinerons votre demande."
+          }
+        ]
+      }
+    ]
+  }
+}

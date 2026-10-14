@@ -1,0 +1,108 @@
+{
+  "common": {
+    "address": "11 Rue Mill, Shediac, NB E4P 1N6",
+    "allRights": "All rights reserved.",
+    "email": "contact@tljsushi.ca",
+    "phone": "(506) 532-0820"
+  },
+  "footer": {
+    "hours": "Opening hours",
+    "hoursDetail": "Tue–Sun: 11:30 AM – 8:00 PM · Mon: closed"
+  },
+  "hero": {
+    "ctaMenu": "View the menu",
+    "ctaOrder": "Order online",
+    "subtitle": "Fresh sushi and authentic Korean cuisine in Shediac, New Brunswick."
+  },
+  "menu": {
+    "backToMenu": "Back to menu",
+    "categories": "Categories",
+    "items": "items",
+    "subtitle": "Fresh sushi and authentic Korean dishes, prepared daily.",
+    "title": "Our Menu"
+  },
+  "nav": {
+    "about": "About",
+    "delivery": "Delivery",
+    "faq": "FAQ",
+    "findUs": "Find Us",
+    "gallery": "Gallery",
+    "home": "Home",
+    "menu": "Menu",
+    "order": "Order"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Everything you need to know before ordering.",
+    "groups": [
+      {
+        "category": "Online Ordering",
+        "items": [
+          {
+            "q": "How do I place an order online?",
+            "a": "Go to our Menu page, add your dishes to the cart, then follow the checkout steps. You'll receive a confirmation email with your order number."
+          },
+          {
+            "q": "Can I change or cancel my order after placing it?",
+            "a": "Call us quickly at (506) 532-0820. If preparation hasn't started yet, we'll do our best to accommodate the change."
+          },
+          {
+            "q": "When can I order?",
+            "a": "You can order online during our opening hours: Tuesday to Sunday, 11:30 AM to 8:00 PM."
+          }
+        ]
+      },
+      {
+        "category": "Delivery & Pickup",
+        "items": [
+          {
+            "q": "Do you offer delivery?",
+            "a": "Yes! We deliver to Shediac, Cap-Pelé, Pointe-du-Chêne and surrounding areas. Zones and fees are shown at checkout. Pickup at the restaurant is also available."
+          },
+          {
+            "q": "How long does delivery take?",
+            "a": "Generally 30 to 45 minutes depending on your distance and how busy we are."
+          },
+          {
+            "q": "Is there a minimum order for delivery?",
+            "a": "The minimum order amount for delivery is shown on the order page and varies by delivery zone."
+          }
+        ]
+      },
+      {
+        "category": "Allergens & Food",
+        "items": [
+          {
+            "q": "How do I report a food allergy?",
+            "a": "At checkout there is a field for allergies or intolerances. The information goes straight to the kitchen."
+          },
+          {
+            "q": "Do your dishes contain gluten?",
+            "a": "Some dishes do (soy sauce, breading, etc.). We offer gluten-free options — feel free to contact us."
+          },
+          {
+            "q": "Are the ingredients fresh?",
+            "a": "Absolutely. Our fish is delivered fresh daily and every dish is prepared to order."
+          }
+        ]
+      },
+      {
+        "category": "Payment",
+        "items": [
+          {
+            "q": "What payment methods do you accept?",
+            "a": "Online: credit and debit cards via Stripe (Visa, Mastercard, Amex). In restaurant: cash and Interac."
+          },
+          {
+            "q": "Is online payment secure?",
+            "a": "Yes, all payments are processed by Stripe. Your banking information is never stored on our servers."
+          },
+          {
+            "q": "Can I get a refund?",
+            "a": "If there's a problem with your order, contact us within 24 hours and we'll review your request."
+          }
+        ]
+      }
+    ]
+  }
+}
