@@ -223,6 +223,10 @@
     "vegetarian": "Végétarien",
     "spicy": "Épicé",
     "close": "Fermer",
-    "options": "Options"
+    "options": "Options",
+    "taxes": "Taxes (TVH 15 %)",
+    "proceedToCheckout": "Passer à la caisse",
+    "clearCart": "Vider le panier",
+    "cartCount": "{count} articles"
   }
 }

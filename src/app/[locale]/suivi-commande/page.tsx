@@ -30,6 +30,9 @@ interface TrackedOrder {
     unit_price_cad: number;
     options: {group_fr: string; option_fr: string; price_delta: number}[];
   }[];
+  subtotal_cad: number;
+  delivery_fee_cad: number;
+  tax_cad: number;
   total_cad: number;
   fulfillment: string;
 }
@@ -117,12 +120,23 @@ export default function SuiviCommandePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-3 border-t pt-3 text-right font-bold">
-            {new Intl.NumberFormat(locale === 'en' ? 'en-CA' : 'fr-CA', {
-              style: 'currency',
-              currency: 'CAD'
-            }).format(order.total_cad)}
-          </p>
+          <div className="mt-3 space-y-1 border-t pt-3 text-right text-sm">
+            {(order.tax_cad || 0) > 0 && (
+              <p className="text-neutral-500">
+                {locale === 'fr' ? 'Taxes (TVH 15 %)' : 'Taxes (HST 15%)'}:{' '}
+                {new Intl.NumberFormat(locale === 'en' ? 'en-CA' : 'fr-CA', {
+                  style: 'currency',
+                  currency: 'CAD'
+                }).format(order.tax_cad)}
+              </p>
+            )}
+            <p className="text-base font-bold">
+              {new Intl.NumberFormat(locale === 'en' ? 'en-CA' : 'fr-CA', {
+                style: 'currency',
+                currency: 'CAD'
+              }).format(order.total_cad)}
+            </p>
+          </div>
         </div>
       )}
     </div>

@@ -57,6 +57,7 @@ export async function POST() {
       items JSONB NOT NULL,
       subtotal_cad NUMERIC(10,2) NOT NULL,
       delivery_fee_cad NUMERIC(10,2) NOT NULL DEFAULT 0,
+      tax_cad NUMERIC(10,2) NOT NULL DEFAULT 0,
       total_cad NUMERIC(10,2) NOT NULL,
       fulfillment TEXT NOT NULL DEFAULT 'pickup',
       customer_name TEXT NOT NULL,
@@ -72,6 +73,10 @@ export async function POST() {
   `;
 
   // 이미 테이블이 있는 경우를 위한 방어적 컬럼 추가
+  await sql`
+    ALTER TABLE orders
+      ADD COLUMN IF NOT EXISTS tax_cad NUMERIC(10,2) NOT NULL DEFAULT 0
+  `;
   await sql`
     ALTER TABLE menu_items
       ADD COLUMN IF NOT EXISTS image TEXT,

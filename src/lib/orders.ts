@@ -19,6 +19,7 @@ export interface Order {
   items: OrderLine[];
   subtotal_cad: number;
   delivery_fee_cad: number;
+  tax_cad: number;
   total_cad: number;
   fulfillment: 'pickup' | 'delivery';
   customer_name: string;
@@ -46,12 +47,12 @@ export async function createOrder(
   if (!isDbConfigured || !sql) throw new Error('DB not configured');
   const rows = await sql`
     INSERT INTO orders
-      (id, items, subtotal_cad, delivery_fee_cad, total_cad, fulfillment,
+      (id, items, subtotal_cad, delivery_fee_cad, tax_cad, total_cad, fulfillment,
        customer_name, customer_phone, customer_email, delivery_address,
        notes, status, stripe_payment_intent)
     VALUES
       (${order.id}, ${JSON.stringify(order.items)}, ${order.subtotal_cad},
-       ${order.delivery_fee_cad}, ${order.total_cad}, ${order.fulfillment},
+       ${order.delivery_fee_cad}, ${order.tax_cad}, ${order.total_cad}, ${order.fulfillment},
        ${order.customer_name}, ${order.customer_phone}, ${order.customer_email},
        ${order.delivery_address}, ${order.notes}, 'pending', ${order.stripe_payment_intent})
     RETURNING *
@@ -106,6 +107,7 @@ function mapRow(r: any): Order {
     items,
     subtotal_cad: Number(r.subtotal_cad),
     delivery_fee_cad: Number(r.delivery_fee_cad),
+    tax_cad: Number(r.tax_cad || 0),
     total_cad: Number(r.total_cad),
     fulfillment: r.fulfillment,
     customer_name: r.customer_name,

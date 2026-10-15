@@ -223,6 +223,10 @@
     "vegetarian": "Vegetarian",
     "spicy": "Spicy",
     "close": "Close",
-    "options": "Options"
+    "options": "Options",
+    "taxes": "Taxes (HST 15%)",
+    "proceedToCheckout": "Proceed to Checkout",
+    "clearCart": "Clear cart",
+    "cartCount": "{count} items"
   }
 }

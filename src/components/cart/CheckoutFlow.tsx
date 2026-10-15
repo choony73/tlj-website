@@ -11,6 +11,7 @@ import {
   useElements
 } from '@stripe/react-stripe-js';
 import {useCart} from './CartProvider';
+import {calcTax} from '@/lib/pricing';
 import {Link} from '@/i18n/navigation';
 
 interface MenuInfo {
@@ -121,7 +122,8 @@ export default function CheckoutFlow() {
 
   const subtotal = detailed.reduce((n, l) => n + l.qty * l.unitPrice, 0);
   const deliveryFee = fulfillment === 'delivery' ? 4.99 : 0;
-  const total = subtotal + deliveryFee;
+  const taxes = calcTax(subtotal + deliveryFee);
+  const total = Math.round((subtotal + deliveryFee + taxes) * 100) / 100;
 
   function nameOf(m: MenuInfo) {
     return locale === 'en' && m.name_en ? m.name_en : m.name_fr;
@@ -278,6 +280,10 @@ export default function CheckoutFlow() {
             <div className="flex justify-between">
               <span>{t('deliveryFee')}</span>
               <span>{deliveryFee ? fmt(deliveryFee) : t('free')}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>{t('taxes')}</span>
+              <span>{fmt(taxes)}</span>
             </div>
             <div className="flex justify-between border-t pt-2 text-base font-bold">
               <span>{t('total')}</span>

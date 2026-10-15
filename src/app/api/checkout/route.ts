@@ -127,7 +127,8 @@ export async function POST(request: NextRequest) {
     0
   );
   const deliveryFee = fulfillment === 'delivery' ? DELIVERY_FEE_CAD : 0;
-  const total = Math.round((subtotal + deliveryFee) * 100) / 100;
+  const taxes = Math.round((subtotal + deliveryFee) * 0.15 * 100) / 100;
+  const total = Math.round((subtotal + deliveryFee + taxes) * 100) / 100;
 
   const orderId = generateOrderId();
   const paymentIntent = await stripe.paymentIntents.create({
@@ -142,6 +143,7 @@ export async function POST(request: NextRequest) {
     items: orderLines,
     subtotal_cad: subtotal,
     delivery_fee_cad: deliveryFee,
+    tax_cad: taxes,
     total_cad: total,
     fulfillment,
     customer_name: customer.name.trim(),
