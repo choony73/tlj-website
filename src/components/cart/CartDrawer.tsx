@@ -28,6 +28,7 @@ export default function CartDrawer({
   const router = useRouter();
   const {lines, setQty, remove, clear} = useCart();
   const [menu, setMenu] = useState<MenuInfo[]>([]);
+  const [menuLoaded, setMenuLoaded] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -36,10 +37,14 @@ export default function CartDrawer({
 
   useEffect(() => {
     if (!open) return;
+    setMenuLoaded(false);
     fetch('/api/menu')
       .then((r) => r.json())
-      .then((d) => setMenu(d.items || []))
-      .catch(() => {});
+      .then((d) => {
+        setMenu(d.items || []);
+        setMenuLoaded(true);
+      })
+      .catch(() => setMenuLoaded(true));
   }, [open ]);
 
   useEffect(() => {
@@ -126,7 +131,11 @@ export default function CartDrawer({
         </div>
 
         <div className="flex-1 overflow-y-auto px-5 py-4">
-          {detailed.length === 0 ? (
+          {!menuLoaded ? (
+            <div className="py-16 text-center text-neutral-400">
+              <p className="animate-pulse text-3xl">🛒</p>
+            </div>
+          ) : detailed.length === 0 ? (
             <div className="py-16 text-center">
               <p className="text-neutral-500">{t('empty')}</p>
               <Link
