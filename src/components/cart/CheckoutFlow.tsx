@@ -19,6 +19,11 @@ interface MenuInfo {
   name_en: string | null;
   price_cad: number;
   image: string | null;
+  option_groups: {
+    name_fr: string;
+    name_en: string | null;
+    options: {name_fr: string; name_en: string | null; price_delta: number}[];
+  }[];
 }
 
 const stripePromise = loadStripe(
@@ -103,15 +108,18 @@ export default function CheckoutFlow() {
   const detailed = useMemo(
     () =>
       lines
-        .map((l) => ({...l, info: menu.find((m) => m.slug === l.slug)}))
+        .map((l) => {
+          const info = menu.find((m) => m.slug === l.slug);
+          const unitPrice =
+            (info?.price_cad || 0) +
+            l.options.reduce((s, o) => s + (o.price_delta || 0), 0);
+          return {...l, info, unitPrice};
+        })
         .filter((l) => l.info),
     [lines, menu]
   );
 
-  const subtotal = detailed.reduce(
-    (n, l) => n + l.qty * (l.info?.price_cad || 0),
-    0
-  );
+  const subtotal = detailed.reduce((n, l) => n + l.qty * l.unitPrice, 0);
   const deliveryFee = fulfillment === 'delivery' ? 4.99 : 0;
   const total = subtotal + deliveryFee;
 
@@ -133,7 +141,11 @@ export default function CheckoutFlow() {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-          lines: lines.map((l) => ({slug: l.slug, qty: l.qty})),
+          lines: lines.map((l) => ({
+            slug: l.slug,
+            qty: l.qty,
+            options: l.options
+          })),
           fulfillment,
           customer
         })
@@ -183,8 +195,11 @@ export default function CheckoutFlow() {
         <>
           <h2 className="mt-6 font-semibold">{t('yourCart')}</h2>
           <div className="mt-3 divide-y rounded-2xl border px-4">
-            {detailed.map((l) => (
-              <div key={l.slug} className="flex items-center justify-between py-3">
+            {detailed.map((l, idx) => (
+              <div
+                key={`${l.slug}-${idx}`}
+                className="flex items-center justify-between py-3"
+              >
                 <div className="flex items-center gap-3">
                   {l.info?.image && (
                     <img
@@ -195,27 +210,37 @@ export default function CheckoutFlow() {
                   )}
                   <div>
                     <p className="font-medium">{l.info && nameOf(l.info)}</p>
+                    {l.options.length > 0 && (
+                      <p className="text-xs text-neutral-500">
+                        {l.options
+                          .map(
+                            (o) =>
+                              `${o.option_fr}${o.price_delta > 0 ? ` (+${fmt(o.price_delta)})` : ''}`
+                          )
+                          .join(', ')}
+                      </p>
+                    )}
                     <p className="text-sm text-neutral-500">
-                      {fmt(l.info?.price_cad || 0)}
+                      {fmt(l.unitPrice)}
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={() => setQty(l.slug, l.qty - 1)}
+                    onClick={() => setQty(l.slug, l.qty - 1, l.options)}
                     className="flex h-8 w-8 items-center justify-center rounded-full border hover:bg-neutral-100"
                   >
                     −
                   </button>
                   <span className="w-6 text-center">{l.qty}</span>
                   <button
-                    onClick={() => setQty(l.slug, l.qty + 1)}
+                    onClick={() => setQty(l.slug, l.qty + 1, l.options)}
                     className="flex h-8 w-8 items-center justify-center rounded-full border hover:bg-neutral-100"
                   >
                     +
                   </button>
                   <button
-                    onClick={() => remove(l.slug)}
+                    onClick={() => remove(l.slug, l.options)}
                     className="ml-2 text-sm text-neutral-400 hover:text-red-700"
                   >
                     {t('remove')}

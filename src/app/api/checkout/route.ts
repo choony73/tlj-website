@@ -33,7 +33,11 @@ export async function POST(request: NextRequest) {
   }
 
   const {lines, fulfillment, customer} = body as {
-    lines: {slug: string; qty: number}[];
+    lines: {
+      slug: string;
+      qty: number;
+      options?: {group_fr: string; option_fr: string; price_delta: number}[];
+    }[];
     fulfillment: 'pickup' | 'delivery';
     customer: {
       name: string;
@@ -76,11 +80,45 @@ export async function POST(request: NextRequest) {
         {status: 400}
       );
     }
+    // 옵션 검증: 서버의 옵션 정의와 대조해 가격을 다시 계산
+    const validOptions: OrderLine['options'] = [];
+    const groups = item.option_groups || [];
+    for (const sel of l.options || []) {
+      const g = groups.find((gg) => gg.name_fr === sel.group_fr);
+      const o = g?.options.find((oo) => oo.name_fr === sel.option_fr);
+      if (!g || !o) {
+        return NextResponse.json(
+          {error: `잘못된 옵션입니다: ${l.slug}`},
+          {status: 400}
+        );
+      }
+      validOptions.push({
+        group_fr: g.name_fr,
+        option_fr: o.name_fr,
+        price_delta: o.price_delta
+      });
+    }
+    // 필수 옵션 누락 검사
+    for (const g of groups) {
+      if (
+        g.required &&
+        !validOptions.some((v) => v.group_fr === g.name_fr)
+      ) {
+        return NextResponse.json(
+          {error: `필수 옵션을 선택해 주세요: ${item.name_fr}`},
+          {status: 400}
+        );
+      }
+    }
+    const unitPrice =
+      item.price_cad +
+      validOptions.reduce((s, o) => s + o.price_delta, 0);
     orderLines.push({
       slug: item.slug,
       name_fr: item.name_fr,
       qty,
-      unit_price_cad: item.price_cad
+      unit_price_cad: Math.round(unitPrice * 100) / 100,
+      options: validOptions
     });
   }
 

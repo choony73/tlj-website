@@ -39,6 +39,11 @@ await sql`
     description_fr TEXT,
     description_en TEXT,
     image TEXT,
+    is_vegetarian BOOLEAN NOT NULL DEFAULT FALSE,
+    is_spicy BOOLEAN NOT NULL DEFAULT FALSE,
+    is_gluten_free BOOLEAN NOT NULL DEFAULT FALSE,
+    is_popular BOOLEAN NOT NULL DEFAULT FALSE,
+    option_groups JSONB NOT NULL DEFAULT '[]',
     available BOOLEAN NOT NULL DEFAULT TRUE,
     sort_order INT NOT NULL DEFAULT 0,
     updated_at TIMESTAMPTZ DEFAULT NOW()
@@ -81,11 +86,14 @@ let n = 0;
 for (const item of data.items) {
   await sql`
     INSERT INTO menu_items
-      (slug, category, name_fr, name_en, price_cad, description_fr, description_en, image, available, sort_order)
+      (slug, category, name_fr, name_en, price_cad, description_fr, description_en, image,
+       is_vegetarian, is_spicy, is_gluten_free, is_popular, option_groups, available, sort_order)
     VALUES
       (${item.slug}, ${item.category}, ${item.name_fr}, ${item.name_en},
        ${item.price_cad}, ${item.description_fr}, ${item.description_en},
-       ${item.image}, ${item.available}, ${n})
+       ${item.image}, ${item.is_vegetarian}, ${item.is_spicy}, ${item.is_gluten_free},
+       ${item.is_popular}, ${JSON.stringify(item.option_groups || [])},
+       ${item.available}, ${n})
     ON CONFLICT (slug) DO UPDATE
     SET category = EXCLUDED.category,
         name_fr = EXCLUDED.name_fr,
@@ -94,6 +102,11 @@ for (const item of data.items) {
         description_fr = EXCLUDED.description_fr,
         description_en = EXCLUDED.description_en,
         image = EXCLUDED.image,
+        is_vegetarian = EXCLUDED.is_vegetarian,
+        is_spicy = EXCLUDED.is_spicy,
+        is_gluten_free = EXCLUDED.is_gluten_free,
+        is_popular = EXCLUDED.is_popular,
+        option_groups = EXCLUDED.option_groups,
         available = EXCLUDED.available,
         updated_at = NOW()
   `;

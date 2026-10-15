@@ -23,7 +23,13 @@ const STATUS_EN: Record<string, string> = {
 interface TrackedOrder {
   id: string;
   status: string;
-  items: {slug: string; name_fr: string; qty: number; unit_price_cad: number}[];
+  items: {
+    slug: string;
+    name_fr: string;
+    qty: number;
+    unit_price_cad: number;
+    options: {group_fr: string; option_fr: string; price_delta: number}[];
+  }[];
   total_cad: number;
   fulfillment: string;
 }
@@ -89,18 +95,25 @@ export default function SuiviCommandePage() {
               {statusLabel[order.status] || order.status}
             </span>
           </div>
-          <ul className="mt-4 space-y-1 text-sm">
-            {order.items.map((i) => (
-              <li key={i.slug} className="flex justify-between">
-                <span>
-                  {i.qty} × {i.name_fr}
-                </span>
-                <span>
-                  {new Intl.NumberFormat(
-                    locale === 'en' ? 'en-CA' : 'fr-CA',
-                    {style: 'currency', currency: 'CAD'}
-                  ).format(i.qty * i.unit_price_cad)}
-                </span>
+          <ul className="mt-4 space-y-2 text-sm">
+            {order.items.map((i, idx) => (
+              <li key={`${i.slug}-${idx}`}>
+                <div className="flex justify-between">
+                  <span>
+                    {i.qty} × {i.name_fr}
+                  </span>
+                  <span>
+                    {new Intl.NumberFormat(
+                      locale === 'en' ? 'en-CA' : 'fr-CA',
+                      {style: 'currency', currency: 'CAD'}
+                    ).format(i.qty * i.unit_price_cad)}
+                  </span>
+                </div>
+                {i.options.length > 0 && (
+                  <p className="text-xs text-neutral-500">
+                    {i.options.map((op) => op.option_fr).join(', ')}
+                  </p>
+                )}
               </li>
             ))}
           </ul>

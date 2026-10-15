@@ -19,7 +19,9 @@
     "categories": "Catégories",
     "items": "plats",
     "subtitle": "Sushis frais et plats coréens authentiques, préparés chaque jour.",
-    "title": "Notre Menu"
+    "title": "Notre Menu",
+    "vegetarian": "Végétarien",
+    "spicy": "Épicé"
   },
   "nav": {
     "about": "À propos",
@@ -214,6 +216,13 @@
     "backHome": "Retour à l'accueil",
     "paymentFailed": "Le paiement a échoué. Veuillez réessayer.",
     "dbRequired": "La commande en ligne sera disponible une fois la base de données connectée.",
-    "stripeRequired": "Le paiement en ligne sera disponible une fois Stripe configuré."
+    "stripeRequired": "Le paiement en ligne sera disponible une fois Stripe configuré.",
+    "quantity": "Quantité",
+    "addToCart": "Ajouter au panier",
+    "selectRequired": "Veuillez choisir une option",
+    "vegetarian": "Végétarien",
+    "spicy": "Épicé",
+    "close": "Fermer",
+    "options": "Options"
   }
 }

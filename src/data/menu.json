@@ -107,7 +107,12 @@
       "description_fr": "Jeunes fèves de soja légèrement salées et cuites à la vapeur",
       "description_en": "Lightly salted young soybeans, steamed",
       "available": true,
-      "image": "/images/menu/edamame.png"
+      "image": "/images/menu/edamame.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "gyoza",
@@ -118,7 +123,32 @@
       "description_fr": "Dumplings japonais croustillants frits farcis de bœuf ou légumes assaisonnés (6 pièces)",
       "description_en": "Crispy pan-fried Japanese dumplings stuffed with seasoned beef or vegetables (6 pcs)",
       "available": true,
-      "image": "/images/menu/gyoza.png"
+      "image": "/images/menu/gyoza.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choice",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Bœuf",
+              "name_en": "Beef",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Légumes",
+              "name_en": "Vegetable",
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "agaedashi-tofu",
@@ -129,7 +159,12 @@
       "description_fr": "Tofu légèrement enrobé de pâte et frit avec sauce savoureuse maison",
       "description_en": "Lightly battered and fried tofu with savoury homemade sauce",
       "available": true,
-      "image": "/images/menu/agaedashi-tofu.png"
+      "image": "/images/menu/agaedashi-tofu.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "takoyaki",
@@ -140,7 +175,12 @@
       "description_fr": "Boulettes japonaises de poulpe, croustillantes à l'extérieur et moelleuses à l'intérieur, garnies de sauce savoureuse et de flocons de bonite",
       "description_en": "Japanese octopus balls, crispy outside and soft inside, topped with savoury sauce and bonito flakes",
       "available": true,
-      "image": "/images/menu/takoyaki.png"
+      "image": "/images/menu/takoyaki.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "potato-korokke",
@@ -151,7 +191,12 @@
       "description_fr": "Purée de pommes de terre à la japonaise, panée et frite.",
       "description_en": "Japanese-style mashed potato, breaded and deep-fried",
       "available": true,
-      "image": "/images/menu/potato-korokke.png"
+      "image": "/images/menu/potato-korokke.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "rouleaux-de-printemps",
@@ -162,7 +207,12 @@
       "description_fr": "Rouleaux de légumes frits",
       "description_en": "Fried vegetable rolls",
       "available": true,
-      "image": "/images/menu/rouleaux-de-printemps.png"
+      "image": "/images/menu/rouleaux-de-printemps.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "house-salad",
@@ -173,7 +223,27 @@
       "description_fr": "Salade de romaine avec vinaigrette au gingembre",
       "description_en": "Romaine salad with ginger dressing",
       "available": true,
-      "image": "/images/menu/house-salad.png"
+      "image": "/images/menu/house-salad.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choix de garniture",
+          "name_en": "Topping",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Avocat",
+              "name_en": "Avocado",
+              "price_delta": 2.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "wakame-salad",
@@ -184,7 +254,12 @@
       "description_fr": "Salade d'algues wakame avec concombre et sauce ponzu",
       "description_en": "Wakame seaweed salad with cucumber and ponzu sauce",
       "available": true,
-      "image": "/images/menu/wakame-salad.png"
+      "image": "/images/menu/wakame-salad.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "lobster-salad",
@@ -195,7 +270,12 @@
       "description_fr": "Salade avec queue de homard frite et vinaigrette au gingembre",
       "description_en": "Salad with fried lobster tail and ginger dressing",
       "available": true,
-      "image": "/images/menu/lobster-salad.png"
+      "image": "/images/menu/lobster-salad.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "sushi-pizza",
@@ -206,7 +286,66 @@
       "description_fr": "Riz à sushi frit avec choix de saumon, avocat ou crabe, légumes, mayonnaise épicée et sauce savoureuse",
       "description_en": "Fried sushi rice with your choice of salmon, avocado or crab, vegetables, spicy mayo and savoury sauce",
       "available": true,
-      "image": "/images/menu/sushi-pizza.png"
+      "image": "/images/menu/sushi-pizza.png",
+      "is_vegetarian": true,
+      "is_spicy": true,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choix de garnitures",
+          "name_en": "Toppings",
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Saumon",
+              "name_en": "Salmon",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Avocat",
+              "name_en": "Avocado",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Crabe",
+              "name_en": "Crab",
+              "price_delta": 0.0
+            }
+          ]
+        },
+        {
+          "name_fr": "Niveau d’épice",
+          "name_en": "Spicy",
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Non épicé",
+              "name_en": "Non spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Moyennement épicé",
+              "name_en": "Medium spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Épicé normal",
+              "name_en": "Regular spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Très épicé",
+              "name_en": "Extra spicy",
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "calamari-tempura",
@@ -217,7 +356,12 @@
       "description_fr": "Tempura de calmars frits (6 pièces)",
       "description_en": "Fried calamari tempura (6 pcs)",
       "available": true,
-      "image": "/images/menu/calamari-tempura.png"
+      "image": "/images/menu/calamari-tempura.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "shrimp-tempura",
@@ -228,7 +372,12 @@
       "description_fr": "Crevettes légèrement enrobées de pâte et frites, croustillantes et dorées (5 pièces)",
       "description_en": "Lightly battered and fried shrimp, crispy and golden (5 pcs)",
       "available": true,
-      "image": "/images/menu/shrimp-tempura.png"
+      "image": "/images/menu/shrimp-tempura.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "mix-tempura",
@@ -239,7 +388,12 @@
       "description_fr": "Assortiment de tempura frits (6 pièces)",
       "description_en": "Assorted fried tempura (6 pcs)",
       "available": true,
-      "image": "/images/menu/mix-tempura.png"
+      "image": "/images/menu/mix-tempura.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "soft-shell-crab-tempura",
@@ -250,7 +404,12 @@
       "description_fr": "Tempura de crabe à carapace molle frit",
       "description_en": "Fried soft shell crab tempura",
       "available": true,
-      "image": "/images/menu/soft-shell-crab-tempura.png"
+      "image": "/images/menu/soft-shell-crab-tempura.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "tempura-de-legumes",
@@ -261,7 +420,12 @@
       "description_fr": "Assortiment de légumes frits en tempura (6 pièces)",
       "description_en": "Assorted fried vegetable tempura (6 pcs)",
       "available": true,
-      "image": "/images/menu/tempura-de-legumes.png"
+      "image": "/images/menu/tempura-de-legumes.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "tempura-de-patate-douce",
@@ -272,7 +436,12 @@
       "description_fr": "Tempura de patate douce frit (5 pièces)",
       "description_en": "Fried sweet potato tempura (5 pcs)",
       "available": true,
-      "image": "/images/menu/tempura-de-patate-douce.png"
+      "image": "/images/menu/tempura-de-patate-douce.png",
+      "is_vegetarian": true,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "miso-soup",
@@ -283,7 +452,12 @@
       "description_fr": "Soupe miso avec ciboulettes et algues",
       "description_en": "Miso soup with green onions and seaweed",
       "available": true,
-      "image": "/images/menu/miso-soup.png"
+      "image": "/images/menu/miso-soup.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "gyoza-soup",
@@ -294,7 +468,12 @@
       "description_fr": "Soupe avec des raviolis japonais farcis de légumes",
       "description_en": "Soup with Japanese dumplings stuffed with vegetables",
       "available": true,
-      "image": "/images/menu/gyoza-soup.png"
+      "image": "/images/menu/gyoza-soup.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "seafood-miso-soup",
@@ -305,7 +484,12 @@
       "description_fr": "Fruits de mer frais et légumes dans un bouillon miso",
       "description_en": "Fresh seafood and vegetables in miso broth",
       "available": true,
-      "image": "/images/menu/seafood-miso-soup.png"
+      "image": "/images/menu/seafood-miso-soup.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "spicy-seafood-miso-soup",
@@ -316,7 +500,12 @@
       "description_fr": "Fruits de mer frais et légumes dans un bouillon miso épicé",
       "description_en": "Fresh seafood and vegetables in spicy miso broth",
       "available": true,
-      "image": "/images/menu/spicy-seafood-miso-soup.png"
+      "image": "/images/menu/spicy-seafood-miso-soup.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "bulgogi-soup",
@@ -327,7 +516,12 @@
       "description_fr": "Soupe avec bœuf mariné, légumes et nouilles de verre dans un bouillon riche et profond",
       "description_en": "Soup with marinated beef, vegetables and glass noodles in a rich, deep broth",
       "available": true,
-      "image": "/images/menu/bulgogi-soup.png"
+      "image": "/images/menu/bulgogi-soup.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "soupe-aux-os-de-porc-gamjatang",
@@ -338,7 +532,12 @@
       "description_fr": "Soupe traditionnelle coréenne préparée avec des os de porc mijotés lentement, du porc tendre, des pommes de terre et des légumes, le tout dans un bouillon riche et savoureux, relevé d'une légère touche épicée",
       "description_en": "Traditional Korean soup made with slow-simmered pork bones, tender pork, potatoes and vegetables in a rich, savoury broth with a light spicy kick",
       "available": true,
-      "image": "/images/menu/soupe-aux-os-de-porc-gamjatang.png"
+      "image": "/images/menu/soupe-aux-os-de-porc-gamjatang.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "chicken-teriyaki",
@@ -349,7 +548,27 @@
       "description_fr": "Poulet grillé & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled chicken and vegetables with teriyaki sauce, served with rice",
       "available": true,
-      "image": "/images/menu/chicken-teriyaki.png"
+      "image": "/images/menu/chicken-teriyaki.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Substitution",
+          "name_en": "Substitute",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Riz -> Nouilles",
+              "name_en": "Rice -> Noodles",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "beef-teriyaki",
@@ -360,7 +579,12 @@
       "description_fr": "Bœuf grillé & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled beef and vegetables with teriyaki sauce, served with rice",
       "available": true,
-      "image": "/images/menu/beef-teriyaki.png"
+      "image": "/images/menu/beef-teriyaki.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "salmon-teriyaki",
@@ -371,7 +595,27 @@
       "description_fr": "Saumon grillé & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled salmon and vegetables with teriyaki sauce, served with rice",
       "available": true,
-      "image": "/images/menu/salmon-teriyaki.png"
+      "image": "/images/menu/salmon-teriyaki.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Substitution",
+          "name_en": "Substitute",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Riz → Nouilles",
+              "name_en": "Rice -> Noodle",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "shrimp-teriyaki",
@@ -382,7 +626,27 @@
       "description_fr": "Crevettes grillées & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled shrimp and vegetables with teriyaki sauce, served with rice",
       "available": true,
-      "image": "/images/menu/shrimp-teriyaki.png"
+      "image": "/images/menu/shrimp-teriyaki.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Substitution",
+          "name_en": "Substitute",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Riz -> Nouilles",
+              "name_en": "Rice -> Noodle",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "bulgogi",
@@ -393,7 +657,12 @@
       "description_fr": "Bœuf mariné sauté avec légumes dans une sauce sucrée et salée",
       "description_en": "Marinated beef stir-fried with vegetables in a sweet and savoury sauce",
       "available": true,
-      "image": "/images/menu/bulgogi.png"
+      "image": "/images/menu/bulgogi.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "chicken-bibimbap",
@@ -404,7 +673,37 @@
       "description_fr": "Bol de riz avec légumes variés, poulet ou bœuf, œuf et sauce gochujang",
       "description_en": "Rice bowl with assorted vegetables, chicken or beef, egg and gochujang sauce",
       "available": true,
-      "image": "/images/menu/chicken-bibimbap.png"
+      "image": "/images/menu/chicken-bibimbap.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Protein",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Tofu",
+              "name_en": "Tofu",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Poulet",
+              "name_en": "Chicken",
+              "price_delta": 1.0
+            },
+            {
+              "name_fr": "Bœuf",
+              "name_en": "Beef",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "tteokbokki",
@@ -415,7 +714,27 @@
       "description_fr": "Gâteaux de riz coréens épicés avec gâteau de poisson, légumes et œuf",
       "description_en": "Spicy Korean rice cakes with fish cake, vegetables and egg",
       "available": true,
-      "image": "/images/menu/tteokbokki.png"
+      "image": "/images/menu/tteokbokki.png",
+      "is_vegetarian": false,
+      "is_spicy": true,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choix de garniture",
+          "name_en": "Topping",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Mozzarella",
+              "name_en": "Mozzarella",
+              "price_delta": 2.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "kimchi",
@@ -426,7 +745,12 @@
       "description_fr": "Chou épicé fermenté coréen maison (Kimchi végan et sans gluten)",
       "description_en": "Homemade spicy fermented Korean cabbage (vegan and gluten-free)",
       "available": true,
-      "image": "/images/menu/kimchi.png"
+      "image": "/images/menu/kimchi.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "pork-katsu-curry",
@@ -437,7 +761,32 @@
       "description_fr": "Curry japonais doux et riche servi avec du riz et une escalope de porc panée et frite",
       "description_en": "Mild and rich Japanese curry served with rice and a breaded, deep-fried pork cutlet",
       "available": true,
-      "image": "/images/menu/pork-katsu-curry.png"
+      "image": "/images/menu/pork-katsu-curry.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Protein",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Pork",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Chicken",
+              "name_en": null,
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "sweet-chili-shrimp",
@@ -448,7 +797,12 @@
       "description_fr": "Porc frit avec légumes dans une sauce aigre-douce servi avec du ri",
       "description_en": "Fried pork with vegetables in sweet and sour sauce, served with rice",
       "available": true,
-      "image": "/images/menu/sweet-chili-shrimp.png"
+      "image": "/images/menu/sweet-chili-shrimp.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": true,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "korean-crispy-fried-chicken",
@@ -459,7 +813,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/korean-crispy-fried-chicken.png"
+      "image": "/images/menu/korean-crispy-fried-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "honey-garlic-chicken",
@@ -470,7 +829,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/honey-garlic-chicken.png"
+      "image": "/images/menu/honey-garlic-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "golden-cheese-chicken",
@@ -481,7 +845,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/golden-cheese-chicken.png"
+      "image": "/images/menu/golden-cheese-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "signature-sauce-chicken",
@@ -492,7 +861,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/signature-sauce-chicken.png"
+      "image": "/images/menu/signature-sauce-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "three-flavor-korean-chicken",
@@ -503,7 +877,12 @@
       "description_fr": "Poulet frit coréen croustillant avec un mélange de trois saveurs signature",
       "description_en": "Crispy Korean fried chicken with a blend of three signature flavours",
       "available": true,
-      "image": "/images/menu/three-flavor-korean-chicken.png"
+      "image": "/images/menu/three-flavor-korean-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "fire-chicken",
@@ -514,7 +893,12 @@
       "description_fr": "Poulet popcorn sans os avec sauce chili coréenne",
       "description_en": "Boneless popcorn chicken with Korean chili sauce",
       "available": true,
-      "image": "/images/menu/fire-chicken.png"
+      "image": "/images/menu/fire-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "creamy-chicken",
@@ -525,7 +909,12 @@
       "description_fr": "Poulet popcorn sans os avec sauce crémeuse sucrée",
       "description_en": "Boneless popcorn chicken with sweet creamy sauce",
       "available": true,
-      "image": "/images/menu/creamy-chicken.png"
+      "image": "/images/menu/creamy-chicken.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "creamy-shrimp",
@@ -536,7 +925,12 @@
       "description_fr": "Crevettes frites avec sauce crémeuse sucrée (4 pièces)",
       "description_en": "Fried shrimp with sweet creamy sauce (4 pcs)",
       "available": true,
-      "image": "/images/menu/creamy-shrimp.png"
+      "image": "/images/menu/creamy-shrimp.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "crispy-chili-chiken-kampoongki",
@@ -547,7 +941,12 @@
       "description_fr": "Poulet frit croustillant enrobé d'une sauce chili addictive servi avec du riz",
       "description_en": "Crispy fried chicken coated in an addictive chili sauce, served with rice",
       "available": true,
-      "image": "/images/menu/crispy-chili-chiken-kampoongki.png"
+      "image": "/images/menu/crispy-chili-chiken-kampoongki.png",
+      "is_vegetarian": false,
+      "is_spicy": true,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "california-roll",
@@ -558,7 +957,12 @@
       "description_fr": "Chair de crabe, avocat, concombre",
       "description_en": "Crab meat, avocado, cucumber",
       "available": true,
-      "image": "/images/menu/california-roll.png"
+      "image": "/images/menu/california-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "avocado-roll",
@@ -569,7 +973,27 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/avocado-roll.png"
+      "image": "/images/menu/avocado-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Feuilles pour rouleaux",
+          "name_en": "Roll wrappers",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Feuille de riz",
+              "name_en": "Rice Paper",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "cucumber-roll",
@@ -580,7 +1004,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/cucumber-roll.png"
+      "image": "/images/menu/cucumber-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "avocado-cucumber-roll",
@@ -591,7 +1020,12 @@
       "description_fr": "Avocat, concombre",
       "description_en": "Avocado, cucumber",
       "available": true,
-      "image": "/images/menu/avocado-cucumber-roll.png"
+      "image": "/images/menu/avocado-cucumber-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "aspargus-roll",
@@ -602,7 +1036,12 @@
       "description_fr": "Asperges frites",
       "description_en": "Fried asparagus",
       "available": true,
-      "image": "/images/menu/aspargus-roll.png"
+      "image": "/images/menu/aspargus-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "sweet-yam-roll",
@@ -613,7 +1052,12 @@
       "description_fr": "Patate douce frite",
       "description_en": "Fried sweet potato",
       "available": true,
-      "image": "/images/menu/sweet-yam-roll.png"
+      "image": "/images/menu/sweet-yam-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "green-yam-roll",
@@ -624,7 +1068,12 @@
       "description_fr": "Rouleau de patate douce frit garni d’avocat",
       "description_en": "Fried sweet potato roll topped with avocado",
       "available": true,
-      "image": "/images/menu/green-yam-roll.png"
+      "image": "/images/menu/green-yam-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "tuna-roll",
@@ -635,7 +1084,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/tuna-roll.png"
+      "image": "/images/menu/tuna-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "salmon-roll",
@@ -646,7 +1100,12 @@
       "description_fr": "Saumon frais",
       "description_en": "Fresh salmon",
       "available": true,
-      "image": "/images/menu/salmon-roll.png"
+      "image": "/images/menu/salmon-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "unagi-roll",
@@ -657,7 +1116,12 @@
       "description_fr": "Anguille grillée, concombre",
       "description_en": "Grilled eel, cucumber",
       "available": true,
-      "image": "/images/menu/unagi-roll.png"
+      "image": "/images/menu/unagi-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "phily-roll",
@@ -668,7 +1132,12 @@
       "description_fr": "Saumon fumé, avocat, fromage à la crème sur le dessus",
       "description_en": "Smoked salmon, avocado, cream cheese on top",
       "available": true,
-      "image": "/images/menu/phily-roll.png"
+      "image": "/images/menu/phily-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "spicy-tuna-roll",
@@ -679,7 +1148,12 @@
       "description_fr": "Thon épicé, concombre",
       "description_en": "Spicy tuna, cucumber",
       "available": true,
-      "image": "/images/menu/spicy-tuna-roll.png"
+      "image": "/images/menu/spicy-tuna-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "spicy-salmon-roll",
@@ -690,7 +1164,12 @@
       "description_fr": "Saumon épicé, concombre",
       "description_en": "Spicy salmon, cucumber",
       "available": true,
-      "image": "/images/menu/spicy-salmon-roll.png"
+      "image": "/images/menu/spicy-salmon-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "tuna-avocado-roll",
@@ -701,7 +1180,12 @@
       "description_fr": "Thon, avocat",
       "description_en": "Tuna, avocado",
       "available": true,
-      "image": "/images/menu/tuna-avocado-roll.png"
+      "image": "/images/menu/tuna-avocado-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "salmon-avocado-roll",
@@ -712,7 +1196,12 @@
       "description_fr": "Saumon, avocat",
       "description_en": "Salmon, avocado",
       "available": true,
-      "image": "/images/menu/salmon-avocado-roll.png"
+      "image": "/images/menu/salmon-avocado-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "shrimp-avocado-roll",
@@ -723,7 +1212,12 @@
       "description_fr": "Tempura de crevettes, avocat",
       "description_en": "Shrimp tempura, avocado",
       "available": true,
-      "image": "/images/menu/shrimp-avocado-roll.png"
+      "image": "/images/menu/shrimp-avocado-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "crispy-crunch-california-roll",
@@ -734,7 +1228,12 @@
       "description_fr": "Chair de crabe, avocat, concombre, croquant épicé",
       "description_en": "Crab meat, avocado, cucumber, spicy crunch",
       "available": true,
-      "image": "/images/menu/crispy-crunch-california-roll.png"
+      "image": "/images/menu/crispy-crunch-california-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "futo-maki-roll",
@@ -745,7 +1244,12 @@
       "description_fr": "Oeuf (Tamago), chair de crabe, concombre, Inari",
       "description_en": "Egg (tamago), crab meat, cucumber, inari",
       "available": true,
-      "image": "/images/menu/futo-maki-roll.png"
+      "image": "/images/menu/futo-maki-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "futo-maki-roll-half",
@@ -756,7 +1260,12 @@
       "description_fr": "Chair de crabe, œuf (Tamago), concombre, Inari (6 pièces)",
       "description_en": "Crab meat, egg (tamago), cucumber, inari (6 pcs)",
       "available": true,
-      "image": "/images/menu/futo-maki-roll-half.png"
+      "image": "/images/menu/futo-maki-roll-half.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "black-jack-roll-half",
@@ -767,7 +1276,12 @@
       "description_fr": "Chair de crabe, tempura de crevettes, anguille grillée, avocat, œufs de poisson, fromage à la crème sur le dessus (le rouleau entier est frit) - 6 pièces",
       "description_en": "Crab meat, shrimp tempura, grilled eel, avocado, fish roe, cream cheese on top (whole roll deep-fried) - 6 pcs",
       "available": true,
-      "image": "/images/menu/black-jack-roll-half.png"
+      "image": "/images/menu/black-jack-roll-half.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "yummy-roll",
@@ -778,7 +1292,12 @@
       "description_fr": "Patate douce frite, oignon, persil et avocat.",
       "description_en": "Fried sweet potato, onion, parsley and avocado",
       "available": true,
-      "image": "/images/menu/yummy-roll.png"
+      "image": "/images/menu/yummy-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "dynamite-roll",
@@ -789,7 +1308,12 @@
       "description_fr": "Tempura de crevettes, avocat, concombre, oeufs de poisson",
       "description_en": "Shrimp tempura, avocado, cucumber, fish roe",
       "available": true,
-      "image": "/images/menu/dynamite-roll.png"
+      "image": "/images/menu/dynamite-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "green-dragon-roll",
@@ -800,7 +1324,12 @@
       "description_fr": "Tempura de crevettes, avocat, concombre, avocat sur le dessus, oeufs de poisson",
       "description_en": "Shrimp tempura, avocado, cucumber, avocado on top, fish roe",
       "available": true,
-      "image": "/images/menu/green-dragon-roll.png"
+      "image": "/images/menu/green-dragon-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "red-dragon-roll",
@@ -811,7 +1340,12 @@
       "description_fr": "Tempura de crevettes, avocat, concombre, saumon sur le dessus",
       "description_en": "Shrimp tempura, avocado, cucumber, salmon on top",
       "available": true,
-      "image": "/images/menu/red-dragon-roll.png"
+      "image": "/images/menu/red-dragon-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "black-dragon-roll",
@@ -822,7 +1356,12 @@
       "description_fr": "Tempura de crevettes, avocat, concombre, anguille grillée sur le dessus, oeufs de poisson",
       "description_en": "Shrimp tempura, avocado, cucumber, grilled eel on top, fish roe",
       "available": true,
-      "image": "/images/menu/black-dragon-roll.png"
+      "image": "/images/menu/black-dragon-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "black-jack-roll",
@@ -833,7 +1372,12 @@
       "description_fr": "Tempura de crevettes, anguille grillée, chair de crabe, avocat, œufs de poisson, fromage à la crème sur le dessus (le rouleau entier est frit)",
       "description_en": "Shrimp tempura, grilled eel, crab meat, avocado, fish roe, cream cheese on top (whole roll deep-fried)",
       "available": true,
-      "image": "/images/menu/black-jack-roll.png"
+      "image": "/images/menu/black-jack-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "tokyo-roll",
@@ -844,7 +1388,12 @@
       "description_fr": "Tempura de crevettes, chair de crabe, oeuf (Tamago), avocat, concombre, œufs de poisson, fromage à la crème sur le dessus",
       "description_en": "Shrimp tempura, crab meat, egg (tamago), avocado, cucumber, fish roe, cream cheese on top",
       "available": true,
-      "image": "/images/menu/tokyo-roll.png"
+      "image": "/images/menu/tokyo-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "crazy-roll",
@@ -855,7 +1404,12 @@
       "description_fr": "Tempura de crevettes, saumon mélangé à une sauce épicée (le rouleau entier est frit et garni de flocons de tempura)",
       "description_en": "Shrimp tempura, salmon mixed with spicy sauce (whole roll deep-fried and topped with tempura flakes)",
       "available": true,
-      "image": "/images/menu/crazy-roll.png"
+      "image": "/images/menu/crazy-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "samurai-roll",
@@ -866,7 +1420,12 @@
       "description_fr": "Thon épicé, rouleau de concombre recouvert de chair de crabe, anguille grillée, avocat",
       "description_en": "Spicy tuna, cucumber roll topped with crab meat, grilled eel and avocado",
       "available": true,
-      "image": "/images/menu/samurai-roll.png"
+      "image": "/images/menu/samurai-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "sakura-roll",
@@ -877,7 +1436,12 @@
       "description_fr": "Crevettes cuites, chair de crabe, oeuf(Tamago), concombre, œufs de poisson, fromage à la crème sur le dessus, enveloppé dans une feuille de soja",
       "description_en": "Cooked shrimp, crab meat, egg (tamago), cucumber, fish roe, cream cheese on top, wrapped in soy paper",
       "available": true,
-      "image": "/images/menu/sakura-roll.png"
+      "image": "/images/menu/sakura-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "mango-dream-roll",
@@ -888,7 +1452,12 @@
       "description_fr": "Tempura de crevettes, chair de crabe, mangue, avocat, concombre, œufs de poisson, fromage à la crème sur le dessus",
       "description_en": "Shrimp tempura, crab meat, mango, avocado, cucumber, fish roe, cream cheese on top",
       "available": true,
-      "image": "/images/menu/mango-dream-roll.png"
+      "image": "/images/menu/mango-dream-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "mango-island-roll",
@@ -899,7 +1468,12 @@
       "description_fr": "Saumon, thon, chair de crabe, mangue, avocat, concombre, œufs de poisson",
       "description_en": "Salmon, tuna, crab meat, mango, avocado, cucumber, fish roe",
       "available": true,
-      "image": "/images/menu/mango-island-roll.png"
+      "image": "/images/menu/mango-island-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "lobster-tempura-roll",
@@ -910,7 +1484,12 @@
       "description_fr": "Tempura de homard, chair de crabe, avocat, concombre, œufs de poisson",
       "description_en": "Lobster tempura, crab meat, avocado, cucumber, fish roe",
       "available": true,
-      "image": "/images/menu/lobster-tempura-roll.png"
+      "image": "/images/menu/lobster-tempura-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "salmon-yaki-roll",
@@ -921,7 +1500,12 @@
       "description_fr": "Chair de crabe, avocat, concombre, saumon épicé flambé sur le dessus",
       "description_en": "Crab meat, avocado, cucumber, torched spicy salmon on top",
       "available": true,
-      "image": "/images/menu/salmon-yaki-roll.png"
+      "image": "/images/menu/salmon-yaki-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "calamari-tempura-roll",
@@ -932,7 +1516,12 @@
       "description_fr": "Calamars frits, chair de crabe, concombre, laitue, fromage à la crème sur le dessus",
       "description_en": "Fried calamari, crab meat, cucumber, lettuce, cream cheese on top",
       "available": true,
-      "image": "/images/menu/calamari-tempura-roll.png"
+      "image": "/images/menu/calamari-tempura-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "chicken-teriyaki-roll",
@@ -943,7 +1532,12 @@
       "description_fr": "Poulet grillé, concombre avec sauce teriyaki",
       "description_en": "Grilled chicken, cucumber with teriyaki sauce",
       "available": true,
-      "image": "/images/menu/chicken-teriyaki-roll.png"
+      "image": "/images/menu/chicken-teriyaki-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "bulgogi-roll",
@@ -954,7 +1548,12 @@
       "description_fr": "Bulgogi, laitue avec sauce teriyaki",
       "description_en": "Bulgogi, lettuce with teriyaki sauce",
       "available": true,
-      "image": "/images/menu/bulgogi-roll.png"
+      "image": "/images/menu/bulgogi-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "big-veggie-roll",
@@ -965,7 +1564,12 @@
       "description_fr": "Patate douce frite, avocat, concombre, poivron et asperges",
       "description_en": "Fried sweet potato, avocado, cucumber, bell pepper and asparagus",
       "available": true,
-      "image": "/images/menu/big-veggie-roll.png"
+      "image": "/images/menu/big-veggie-roll.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "roll-combo",
@@ -976,7 +1580,12 @@
       "description_fr": "Dynamite Roll, California Roll, Salmon Roll",
       "description_en": "Dynamite Roll, California Roll, Salmon Roll",
       "available": true,
-      "image": "/images/menu/roll-combo.png"
+      "image": "/images/menu/roll-combo.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "spicy-roll-combo",
@@ -987,7 +1596,12 @@
       "description_fr": "Spicy Dynamite Roll, Spicy California Roll, Spicy Salmon Roll",
       "description_en": "Spicy Dynamite Roll, Spicy California Roll, Spicy Salmon Roll",
       "available": true,
-      "image": "/images/menu/spicy-roll-combo.png"
+      "image": "/images/menu/spicy-roll-combo.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "veggie-roll-combo",
@@ -998,7 +1612,12 @@
       "description_fr": "Big veggie roll, sweet yam roll, avocado cucumber roll",
       "description_en": "Big veggie roll, sweet yam roll, avocado cucumber roll",
       "available": true,
-      "image": "/images/menu/veggie-roll-combo.png"
+      "image": "/images/menu/veggie-roll-combo.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "special-roll-combo",
@@ -1009,7 +1628,12 @@
       "description_fr": "Green Dragon Roll, Calamari Tempura Roll, Dynamite Roll, Spicy Salmon Roll, Black Jack Roll (Demi)",
       "description_en": "Green Dragon Roll, Calamari Tempura Roll, Dynamite Roll, Spicy Salmon Roll, Black Jack Roll (half)",
       "available": true,
-      "image": "/images/menu/special-roll-combo.png"
+      "image": "/images/menu/special-roll-combo.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "tofu-and-vegetable-stir-fry",
@@ -1020,7 +1644,27 @@
       "description_fr": "Tofu & légumes frits avec riz",
       "description_en": "Fried tofu and vegetables with rice",
       "available": true,
-      "image": "/images/menu/tofu-and-vegetable-stir-fry.png"
+      "image": "/images/menu/tofu-and-vegetable-stir-fry.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Substitution",
+          "name_en": "Substitute",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Riz → Nouilles",
+              "name_en": "Rice -> Noodle",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "saute-de-style-coreen",
@@ -1031,7 +1675,56 @@
       "description_fr": "Sauté de style coréen avec choix de protéine",
       "description_en": "Korean-style stir-fry with choice of protein",
       "available": true,
-      "image": "/images/menu/saute-de-style-coreen.png"
+      "image": "/images/menu/saute-de-style-coreen.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Protéine",
+          "name_en": "Protein",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Porc",
+              "name_en": "Pork",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Poulet",
+              "name_en": "Chicken",
+              "price_delta": 1.0
+            },
+            {
+              "name_fr": "Fruits de mer",
+              "name_en": "Seafood",
+              "price_delta": 3.0
+            },
+            {
+              "name_fr": "Calmar",
+              "name_en": "Squid",
+              "price_delta": 2.0
+            }
+          ]
+        },
+        {
+          "name_fr": "Substitution",
+          "name_en": "Substitute",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Riz → Nouilles",
+              "name_en": "Rice → Noodles",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "beef-donburi",
@@ -1042,7 +1735,12 @@
       "description_fr": "Bol de riz avec bœuf, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with beef, vegetables, runny egg and savoury sauce",
       "available": true,
-      "image": "/images/menu/beef-donburi.png"
+      "image": "/images/menu/beef-donburi.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "chicken-donburi",
@@ -1053,7 +1751,12 @@
       "description_fr": "Bol de riz avec poulet, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with chicken, vegetables, runny egg and savoury sauce",
       "available": true,
-      "image": "/images/menu/chicken-donburi.png"
+      "image": "/images/menu/chicken-donburi.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "shrimp-donburi",
@@ -1064,7 +1767,12 @@
       "description_fr": "Bol de riz avec crevettes en tempura, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with shrimp tempura, vegetables, runny egg and savoury sauce",
       "available": true,
-      "image": "/images/menu/shrimp-donburi.png"
+      "image": "/images/menu/shrimp-donburi.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "katsu-donburi",
@@ -1075,7 +1783,12 @@
       "description_fr": "Bol de riz avec escalope de porc panée et frite, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with breaded and deep-fried pork cutlet, vegetables, runny egg and savoury sauce",
       "available": true,
-      "image": "/images/menu/katsu-donburi.png"
+      "image": "/images/menu/katsu-donburi.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "donkatsu",
@@ -1086,7 +1799,32 @@
       "description_fr": "Côtelette de porc ou de poulet panée, servie avec du riz et de la sauce katsu",
       "description_en": "Breaded pork or chicken cutlet served with rice and katsu sauce",
       "available": true,
-      "image": "/images/menu/donkatsu.png"
+      "image": "/images/menu/donkatsu.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choice",
+          "name_en": null,
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Pork",
+              "name_en": "Pork",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Chicken",
+              "name_en": "Chicken",
+              "price_delta": 1.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "cheese-katsu",
@@ -1097,7 +1835,12 @@
       "description_fr": "Escalope de porc panée et frite farcie de mozzarella servie avec du riz et sauce katsu",
       "description_en": "Breaded and deep-fried pork cutlet stuffed with mozzarella, served with rice and katsu sauce",
       "available": true,
-      "image": "/images/menu/cheese-katsu.png"
+      "image": "/images/menu/cheese-katsu.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "fish-katsu",
@@ -1108,7 +1851,12 @@
       "description_fr": "Aiglefin pané et frit servi avec du riz et sauce katsu",
       "description_en": "Breaded and deep-fried haddock served with rice and katsu sauce",
       "available": true,
-      "image": "/images/menu/fish-katsu.png"
+      "image": "/images/menu/fish-katsu.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "chili-shrimp",
@@ -1119,7 +1867,12 @@
       "description_fr": "Crevettes frites croustillantes enrobées d’une sauce chili addictive servies avec du riz",
       "description_en": "Crispy fried shrimp coated in an addictive chili sauce, served with rice",
       "available": true,
-      "image": "/images/menu/chili-shrimp.png"
+      "image": "/images/menu/chili-shrimp.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "donkotsu-ramen",
@@ -1130,7 +1883,32 @@
       "description_fr": "Ramen japonais dans un bouillon riche à base d’os de porc avec chashu ou karaage, légumes et œuf",
       "description_en": "Japanese ramen in a rich pork-bone broth with chashu or karaage, vegetables and egg",
       "available": true,
-      "image": "/images/menu/donkotsu-ramen.png"
+      "image": "/images/menu/donkotsu-ramen.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choix de garnitures",
+          "name_en": "Toppings",
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Chashu",
+              "name_en": "Chashu",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Karaage de porc",
+              "name_en": "Pork Karaage",
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "korean-ramen",
@@ -1141,7 +1919,71 @@
       "description_fr": "Ramen coréen dans un bouillon épicé avec légumes et œuf",
       "description_en": "Korean ramen in a spicy broth with vegetables and egg",
       "available": true,
-      "image": "/images/menu/korean-ramen.png"
+      "image": "/images/menu/korean-ramen.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choix de garnitures",
+          "name_en": "Toppings",
+          "required": false,
+          "multiple": true,
+          "max": 2,
+          "options": [
+            {
+              "name_fr": "Oeuf",
+              "name_en": "Egg",
+              "price_delta": 2.0
+            },
+            {
+              "name_fr": "Chatshu",
+              "name_en": "Chatshu",
+              "price_delta": 3.0
+            },
+            {
+              "name_fr": "Poulet",
+              "name_en": "Chicken",
+              "price_delta": 4.0
+            },
+            {
+              "name_fr": "Fruits de mer",
+              "name_en": "Seafood",
+              "price_delta": 5.0
+            }
+          ]
+        },
+        {
+          "name_fr": "Niveau d’épice",
+          "name_en": "Spicy",
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Non épicé",
+              "name_en": "Non Spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Moyennement épicé",
+              "name_en": "Medium Spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Épicé normal",
+              "name_en": "Regular Spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Très épicé",
+              "name_en": "Extra Spicy",
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "japanese-udon",
@@ -1152,7 +1994,61 @@
       "description_fr": "Nouilles udon japonaises épaisses dans un bouillon savoureux avec légumes et choix de protéine",
       "description_en": "Thick Japanese udon noodles in a savoury broth with vegetables and choice of protein",
       "available": true,
-      "image": "/images/menu/japanese-udon.png"
+      "image": "/images/menu/japanese-udon.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Choix de garnitures",
+          "name_en": "Toppings",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Poulet",
+              "name_en": "Chicken",
+              "price_delta": 4.0
+            },
+            {
+              "name_fr": "Fruits de mer",
+              "name_en": "Seafood",
+              "price_delta": 5.0
+            }
+          ]
+        },
+        {
+          "name_fr": "Niveau d’épice",
+          "name_en": "Spicy Level",
+          "required": false,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Non épicé",
+              "name_en": "Non spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Moyennement épicé",
+              "name_en": "Medium spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Épicé normal",
+              "name_en": "Regular spicy",
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Très épicé",
+              "name_en": "Extra spicy",
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "nagasaki-jam-bong",
@@ -1163,7 +2059,12 @@
       "description_fr": "Soupe de nouilles udon aux fruits de mer avec légumes dans un bouillon riche",
       "description_en": "Seafood udon noodle soup with vegetables in a rich broth",
       "available": true,
-      "image": "/images/menu/nagasaki-jam-bong.png"
+      "image": "/images/menu/nagasaki-jam-bong.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "spicy-jam-bong",
@@ -1174,7 +2075,12 @@
       "description_fr": "Soupe épicée de nouilles udon aux fruits de mer avec légumes dans un bouillon riche",
       "description_en": "Spicy seafood udon noodle soup with vegetables in a rich broth",
       "available": true,
-      "image": "/images/menu/spicy-jam-bong.png"
+      "image": "/images/menu/spicy-jam-bong.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "king-lobster-jam-bong",
@@ -1185,7 +2091,12 @@
       "description_fr": "Udon épicé aux fruits de mer avec homard et légumes dans un bouillon riche",
       "description_en": "Spicy seafood udon with lobster and vegetables in a rich broth",
       "available": true,
-      "image": "/images/menu/king-lobster-jam-bong.png"
+      "image": "/images/menu/king-lobster-jam-bong.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "vegetable-yaki-udon",
@@ -1196,7 +2107,61 @@
       "description_fr": "Nouilles udon ou soba sautées avec légumes et choix de protéine dans une sauce savoureuse",
       "description_en": "Stir-fried udon or soba noodles with vegetables and choice of protein in a savoury sauce",
       "available": true,
-      "image": "/images/menu/vegetable-yaki-udon.png"
+      "image": "/images/menu/vegetable-yaki-udon.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Topping",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Tofu",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Chicken",
+              "name_en": null,
+              "price_delta": 1.0
+            },
+            {
+              "name_fr": "Shrimp",
+              "name_en": null,
+              "price_delta": 1.0
+            },
+            {
+              "name_fr": "Beef",
+              "name_en": null,
+              "price_delta": 1.0
+            }
+          ]
+        },
+        {
+          "name_fr": "Noodle",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Udon",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Soba",
+              "name_en": null,
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "korean-glass-noodle",
@@ -1207,7 +2172,12 @@
       "description_fr": "Nouilles de verre coréennes sautées avec bœuf et légumes",
       "description_en": "Korean glass noodles stir-fried with beef and vegetables",
       "available": true,
-      "image": "/images/menu/korean-glass-noodle.png"
+      "image": "/images/menu/korean-glass-noodle.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "chowmein",
@@ -1218,7 +2188,37 @@
       "description_fr": "Nouilles sautées avec légumes et choix de protéine",
       "description_en": "Stir-fried noodles with vegetables and choice of protein",
       "available": true,
-      "image": "/images/menu/chowmein.png"
+      "image": "/images/menu/chowmein.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Protein",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Chicken",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Shrimp",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Beef",
+              "name_en": null,
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     },
     {
       "slug": "matcha-latte",
@@ -1229,7 +2229,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/matcha-latte.png"
+      "image": "/images/menu/matcha-latte.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "vanilla-latte",
@@ -1240,7 +2245,12 @@
       "description_fr": null,
       "description_en": null,
       "available": true,
-      "image": "/images/menu/vanilla-latte.png"
+      "image": "/images/menu/vanilla-latte.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": []
     },
     {
       "slug": "pink-rush",
@@ -1251,7 +2261,37 @@
       "description_fr": null,
       "description_en": "House-made sparkling beverage",
       "available": true,
-      "image": "/images/menu/pink-rush.png"
+      "image": "/images/menu/pink-rush.png",
+      "is_vegetarian": false,
+      "is_spicy": false,
+      "is_gluten_free": false,
+      "is_popular": false,
+      "option_groups": [
+        {
+          "name_fr": "Flavor",
+          "name_en": null,
+          "required": true,
+          "multiple": false,
+          "max": null,
+          "options": [
+            {
+              "name_fr": "Pink Rush",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Mango Tango",
+              "name_en": null,
+              "price_delta": 0.0
+            },
+            {
+              "name_fr": "Tropical Blast",
+              "name_en": null,
+              "price_delta": 0.0
+            }
+          ]
+        }
+      ]
     }
   ]
 }

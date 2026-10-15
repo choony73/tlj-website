@@ -19,7 +19,9 @@
     "categories": "Categories",
     "items": "items",
     "subtitle": "Fresh sushi and authentic Korean dishes, prepared daily.",
-    "title": "Our Menu"
+    "title": "Our Menu",
+    "vegetarian": "Vegetarian",
+    "spicy": "Spicy"
   },
   "nav": {
     "about": "About",
@@ -214,6 +216,13 @@
     "backHome": "Back to home",
     "paymentFailed": "Payment failed. Please try again.",
     "dbRequired": "Online ordering will be available once the database is connected.",
-    "stripeRequired": "Online payment will be available once Stripe is configured."
+    "stripeRequired": "Online payment will be available once Stripe is configured.",
+    "quantity": "Quantity",
+    "addToCart": "Add to Cart",
+    "selectRequired": "Please choose an option",
+    "vegetarian": "Vegetarian",
+    "spicy": "Spicy",
+    "close": "Close",
+    "options": "Options"
   }
 }

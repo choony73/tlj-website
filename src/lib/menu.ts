@@ -13,6 +13,21 @@ export interface Category {
   item_count: number;
 }
 
+export interface OptionChoice {
+  name_fr: string;
+  name_en: string | null;
+  price_delta: number;
+}
+
+export interface OptionGroup {
+  name_fr: string;
+  name_en: string | null;
+  required: boolean;
+  multiple: boolean;
+  max: number | null;
+  options: OptionChoice[];
+}
+
 export interface MenuItem {
   slug: string;
   category: string;
@@ -22,6 +37,11 @@ export interface MenuItem {
   description_fr: string | null;
   description_en: string | null;
   image: string | null;
+  is_vegetarian: boolean;
+  is_spicy: boolean;
+  is_gluten_free: boolean;
+  is_popular: boolean;
+  option_groups: OptionGroup[];
   available: boolean;
 }
 
@@ -48,7 +68,13 @@ export async function getMenuItems(): Promise<MenuItem[]> {
     const rows = await sql`
       SELECT slug, category, name_fr, name_en,
              price_cad::float AS price_cad,
-             description_fr, description_en, image, available
+             description_fr, description_en, image,
+             COALESCE(is_vegetarian, false) AS is_vegetarian,
+             COALESCE(is_spicy, false) AS is_spicy,
+             COALESCE(is_gluten_free, false) AS is_gluten_free,
+             COALESCE(is_popular, false) AS is_popular,
+             COALESCE(option_groups, '[]'::jsonb) AS option_groups,
+             available
       FROM menu_items
       ORDER BY category, sort_order
     `;

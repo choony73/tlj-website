@@ -1,10 +1,17 @@
 import {sql, isDbConfigured} from './db';
 
+export interface OrderLineOption {
+  group_fr: string;
+  option_fr: string;
+  price_delta: number;
+}
+
 export interface OrderLine {
   slug: string;
   name_fr: string;
   qty: number;
   unit_price_cad: number;
+  options: OrderLineOption[];
 }
 
 export interface Order {
@@ -90,9 +97,13 @@ export async function setOrderStatus(id: string, status: string): Promise<void> 
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function mapRow(r: any): Order {
+  const items = (typeof r.items === 'string' ? JSON.parse(r.items) : r.items).map(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (it: any) => ({options: [], ...it})
+  );
   return {
     id: r.id,
-    items: typeof r.items === 'string' ? JSON.parse(r.items) : r.items,
+    items,
     subtotal_cad: Number(r.subtotal_cad),
     delivery_fee_cad: Number(r.delivery_fee_cad),
     total_cad: Number(r.total_cad),

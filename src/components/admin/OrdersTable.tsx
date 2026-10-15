@@ -68,13 +68,20 @@ export default function OrdersTable({initial}: {initial: Order[]}) {
           </div>
           <ul className="mt-3 space-y-1 border-t pt-3 text-sm">
             {o.items.map((i) => (
-              <li key={i.slug} className="flex justify-between">
-                <span>
-                  {i.qty} × {i.name_fr}
-                </span>
-                <span className="text-neutral-500">
-                  {fmt(i.qty * i.unit_price_cad)}
-                </span>
+              <li key={i.slug + JSON.stringify(i.options)}>
+                <div className="flex justify-between">
+                  <span>
+                    {i.qty} × {i.name_fr}
+                  </span>
+                  <span className="text-neutral-500">
+                    {fmt(i.qty * i.unit_price_cad)}
+                  </span>
+                </div>
+                {i.options.length > 0 && (
+                  <p className="text-xs text-neutral-400">
+                    {i.options.map((op) => op.option_fr).join(', ')}
+                  </p>
+                )}
               </li>
             ))}
           </ul>
