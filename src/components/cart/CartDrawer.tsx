@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect, useMemo, useState} from 'react';
+import {createPortal} from 'react-dom';
 import {useLocale, useTranslations} from 'next-intl';
 import {Link, useRouter} from '@/i18n/navigation';
 import {useCart} from './CartProvider';
@@ -27,6 +28,11 @@ export default function CartDrawer({
   const router = useRouter();
   const {lines, setQty, remove, clear} = useCart();
   const [menu, setMenu] = useState<MenuInfo[]>([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -83,7 +89,9 @@ export default function CartDrawer({
     router.push('/commander');
   }
 
-  return (
+  // 헤더의 backdrop-blur가 fixed 요소의 기준을 깨뜨리므로 body로 포털
+  if (!mounted) return null;
+  return createPortal(
     <div
       className={`fixed inset-0 z-[100] ${open ? '' : 'pointer-events-none'}`}
       aria-hidden={!open}
@@ -95,7 +103,7 @@ export default function CartDrawer({
         onClick={onClose}
       />
       <aside
-        className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col bg-white text-neutral-900 shadow-2xl transition-transform duration-300 ${
+        className={`fixed inset-y-0 right-0 flex w-full max-w-md flex-col bg-white text-neutral-900 shadow-2xl transition-transform duration-300 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
@@ -222,6 +230,7 @@ export default function CartDrawer({
           </div>
         )}
       </aside>
-    </div>
+    </div>,
+    document.body
   );
 }
