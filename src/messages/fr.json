@@ -226,7 +226,7 @@
     "options": "Options",
     "taxes": "Taxes (TVH 15 %)",
     "proceedToCheckout": "Passer à la caisse",
-    "clearCart": "Vider le panier",
+    "clearCart": "Retirer",
     "cartCount": "{count} articles"
   }
 }

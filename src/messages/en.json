@@ -226,7 +226,7 @@
     "options": "Options",
     "taxes": "Taxes (HST 15%)",
     "proceedToCheckout": "Proceed to Checkout",
-    "clearCart": "Clear cart",
+    "clearCart": "Remove",
     "cartCount": "{count} items"
   }
 }
