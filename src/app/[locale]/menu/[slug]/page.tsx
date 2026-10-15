@@ -2,9 +2,11 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {Link} from '@/i18n/navigation';
 import AddToCartButton from '@/components/cart/AddToCartButton';
+import QuickAddButton from '@/components/cart/QuickAddButton';
 import {
   categorySlugs,
   menuItemSlugs,
+  categoryDescription,
   categoryName,
   formatPrice,
   getCategory,
@@ -31,6 +33,7 @@ export default async function MenuSlugPage({
   const category = await getCategory(slug);
   if (category) {
     const items = await getItemsByCategory(slug);
+    const catDesc = categoryDescription(category, locale);
     return (
       <div className="mx-auto max-w-6xl px-4 py-12">
         <Link href="/menu" className="text-sm text-red-700 hover:underline">
@@ -39,38 +42,59 @@ export default async function MenuSlugPage({
         <h1 className="mt-2 text-3xl font-bold">
           {categoryName(category, locale)}
         </h1>
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <p className="mt-1 text-sm text-neutral-500">
+          {items.length} {t('items')}
+        </p>
+        {catDesc && (
+          <p className="mt-4 max-w-3xl text-neutral-400">{catDesc}</p>
+        )}
+        <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {items.map((item) => (
-            <Link
+            <div
               key={item.slug}
-              href={`/menu/${item.slug}`}
-              className="flex items-center gap-4 rounded-2xl border p-4 transition hover:border-red-700 hover:shadow-md"
+              className="relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900 transition hover:border-neutral-600 hover:shadow-lg"
             >
-              {item.image && (
-                <img
-                  src={item.image}
-                  alt={itemName(item, locale)}
-                  className="h-20 w-20 shrink-0 rounded-xl object-cover"
-                  loading="lazy"
+              <Link href={`/menu/${item.slug}`} className="block">
+                <div className="relative">
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={itemName(item, locale)}
+                      className="aspect-[4/3] w-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="aspect-[4/3] w-full bg-neutral-800" />
+                  )}
+                  <span className="absolute bottom-3 left-3 rounded-full bg-amber-400 px-3 py-1 text-sm font-bold text-neutral-950">
+                    {formatPrice(item.price_cad, locale)}
+                  </span>
+                </div>
+                <div className="p-4">
+                  <p className="font-semibold text-white">
+                    {itemName(item, locale)}
+                  </p>
+                  {itemDescription(item, locale) && (
+                    <p className="mt-1 line-clamp-2 text-sm text-neutral-400">
+                      {itemDescription(item, locale)}
+                    </p>
+                  )}
+                  {!item.available && (
+                    <p className="mt-1 text-sm font-medium text-red-400">
+                      {locale === 'fr' ? 'Épuisé' : 'Sold out'}
+                    </p>
+                  )}
+                </div>
+              </Link>
+              <div className="absolute right-3 top-3">
+                <QuickAddButton
+                  slug={item.slug}
+                  label={
+                    locale === 'fr' ? 'Ajouter au panier' : 'Add to cart'
+                  }
                 />
-              )}
-              <div className="min-w-0 flex-1">
-                <p className="font-semibold">{itemName(item, locale)}</p>
-                {itemDescription(item, locale) && (
-                  <p className="mt-1 line-clamp-2 text-sm text-neutral-600">
-                    {itemDescription(item, locale)}
-                  </p>
-                )}
-                {!item.available && (
-                  <p className="mt-1 text-sm font-medium text-red-700">
-                    {locale === 'fr' ? 'Épuisé' : 'Sold out'}
-                  </p>
-                )}
               </div>
-              <p className="shrink-0 font-bold">
-                {formatPrice(item.price_cad, locale)}
-              </p>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

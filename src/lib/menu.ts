@@ -8,6 +8,8 @@ export interface Category {
   slug: string;
   name_fr: string;
   name_en: string;
+  description_fr: string | null;
+  description_en: string | null;
   item_count: number;
 }
 
@@ -29,7 +31,8 @@ const jsonItems: MenuItem[] = data.items as MenuItem[];
 export async function getCategories(): Promise<Category[]> {
   if (isDbConfigured && sql) {
     const rows = await sql`
-      SELECT c.slug, c.name_fr, c.name_en, COUNT(i.slug)::int AS item_count
+      SELECT c.slug, c.name_fr, c.name_en, c.description_fr, c.description_en,
+             COUNT(i.slug)::int AS item_count
       FROM categories c
       LEFT JOIN menu_items i ON i.category = c.slug
       GROUP BY c.slug
@@ -91,6 +94,14 @@ export function itemDescription(
 
 export function categoryName(cat: Category, locale: string): string {
   return locale === 'en' ? cat.name_en : cat.name_fr;
+}
+
+export function categoryDescription(
+  cat: Category,
+  locale: string
+): string | null {
+  const d = locale === 'en' ? cat.description_en : cat.description_fr;
+  return d || null;
 }
 
 export function formatPrice(cad: number, locale: string): string {

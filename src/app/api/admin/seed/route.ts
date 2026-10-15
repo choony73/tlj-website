@@ -26,6 +26,8 @@ export async function POST() {
       slug TEXT PRIMARY KEY,
       name_fr TEXT NOT NULL,
       name_en TEXT NOT NULL,
+      description_fr TEXT,
+      description_en TEXT,
       sort_order INT NOT NULL DEFAULT 0
     )
   `;
@@ -66,11 +68,13 @@ export async function POST() {
 
   for (const [idx, cat] of data.categories.entries()) {
     await sql`
-      INSERT INTO categories (slug, name_fr, name_en, sort_order)
-      VALUES (${cat.slug}, ${cat.name_fr}, ${cat.name_en}, ${idx})
+      INSERT INTO categories (slug, name_fr, name_en, description_fr, description_en, sort_order)
+      VALUES (${cat.slug}, ${cat.name_fr}, ${cat.name_en}, ${cat.description_fr}, ${cat.description_en}, ${idx})
       ON CONFLICT (slug) DO UPDATE
       SET name_fr = EXCLUDED.name_fr,
           name_en = EXCLUDED.name_en,
+          description_fr = EXCLUDED.description_fr,
+          description_en = EXCLUDED.description_en,
           sort_order = EXCLUDED.sort_order
     `;
   }

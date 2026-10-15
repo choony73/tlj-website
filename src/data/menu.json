@@ -4,73 +4,97 @@
       "slug": "entrees",
       "name_fr": "Entrées",
       "name_en": "Starters",
-      "item_count": 10
+      "item_count": 10,
+      "description_fr": "Petits plats parfaits pour accompagner votre repas",
+      "description_en": "Small dishes perfect to enjoy alongside your meal"
     },
     {
       "slug": "tempura",
       "name_fr": "Tempura",
       "name_en": "Tempura",
-      "item_count": 6
+      "item_count": 6,
+      "description_fr": "Tempura japonaise croustillante, fruits de mer et légumes légèrement enrobés",
+      "description_en": "Crispy Japanese-style tempura, lightly battered seafood and vegetables"
     },
     {
       "slug": "soupe",
       "name_fr": "Soupes",
       "name_en": "Soups",
-      "item_count": 6
+      "item_count": 6,
+      "description_fr": "Petites soupes et salades fraîches pour ouvrir l'appétit",
+      "description_en": "Small soups and fresh salads to open your appetite"
     },
     {
       "slug": "teriyaki-japonais",
       "name_fr": "Teriyaki japonais",
       "name_en": "Japanese Teriyaki",
-      "item_count": 4
+      "item_count": 4,
+      "description_fr": "Des saveurs légères et équilibrées, au goût pur et raffiné, représentant les plats japonais",
+      "description_en": "Light and balanced flavours with a pure, refined taste — classic Japanese dishes"
     },
     {
       "slug": "korean-cuisine",
       "name_fr": "Cuisine coréenne",
       "name_en": "Korean Cuisine",
-      "item_count": 6
+      "item_count": 6,
+      "description_fr": "Des saveurs intenses et riches, au goût fort et addictif, représentant les plats coréens",
+      "description_en": "Bold, rich and addictive flavours — classic Korean dishes"
     },
     {
       "slug": "korean-fried-chicken",
       "name_fr": "Poulet frit coréen",
       "name_en": "Korean Fried Chicken",
-      "item_count": 9
+      "item_count": 9,
+      "description_fr": "Poulet frit coréen croustillant aux saveurs intenses et sauces signature",
+      "description_en": "Crispy Korean fried chicken with bold flavours and signature sauces"
     },
     {
       "slug": "classic-roll",
       "name_fr": "Rouleaux classiques",
       "name_en": "Classic Rolls",
-      "item_count": 21
+      "item_count": 21,
+      "description_fr": "Simple sushi rolls made with fresh ingredients (8 pièces)",
+      "description_en": "Simple sushi rolls made with fresh ingredients (8 pcs)"
     },
     {
       "slug": "premium-roll",
       "name_fr": "Rouleaux premium",
       "name_en": "Premium Rolls",
-      "item_count": 17
+      "item_count": 17,
+      "description_fr": "Rouleaux spéciaux aux ingrédients premium et combinaisons créatives (8 pièces ou plus)",
+      "description_en": "Special rolls with premium ingredients and creative combinations (8 pcs or more)"
     },
     {
       "slug": "combo-menu",
       "name_fr": "Combos",
       "name_en": "Combos",
-      "item_count": 4
+      "item_count": 4,
+      "description_fr": "Menus équilibrés combinant des plats populaires",
+      "description_en": "Balanced sets combining popular dishes"
     },
     {
       "slug": "saute",
       "name_fr": "Sautés",
       "name_en": "Stir-Fry",
-      "item_count": 10
+      "item_count": 10,
+      "description_fr": "Plats sautés savoureux",
+      "description_en": "Savoury stir-fried dishes"
     },
     {
       "slug": "soupe-de-nouilles",
       "name_fr": "Soupes de nouilles",
       "name_en": "Noodle Soups",
-      "item_count": 9
+      "item_count": 9,
+      "description_fr": "Soupes de nouilles réconfortantes au bouillon riche et savoureux",
+      "description_en": "Comforting noodle soups in a rich, savoury broth"
     },
     {
       "slug": "boissons",
       "name_fr": "Boissons",
       "name_en": "Drinks",
-      "item_count": 3
+      "item_count": 3,
+      "description_fr": "Boissons rafraîchissantes et desserts sucrés",
+      "description_en": "Refreshing drinks and sweet desserts"
     }
   ],
   "items": [
