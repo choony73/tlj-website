@@ -12,7 +12,8 @@ export async function GET() {
         category: i.category,
         name_fr: i.name_fr,
         name_en: i.name_en,
-        price_cad: i.price_cad
+        price_cad: i.price_cad,
+        image: i.image
       }))
   });
 }

@@ -30,12 +30,13 @@ export async function PUT(
     price_cad,
     description_fr,
     description_en,
+    image,
     available
   } = body;
 
   // 부분 업데이트 지원: 기존 행을 읽어 전달된 필드만 덮어씀
   const existing = await sql!`
-    SELECT category, name_fr, name_en, price_cad, description_fr, description_en, available
+    SELECT category, name_fr, name_en, price_cad, description_fr, description_en, image, available
     FROM menu_items WHERE slug = ${slug}
   `;
   if (existing.length === 0) {
@@ -54,6 +55,7 @@ export async function PUT(
       description_fr !== undefined ? description_fr || null : cur.description_fr,
     description_en:
       description_en !== undefined ? description_en || null : cur.description_en,
+    image: image !== undefined ? image || null : cur.image,
     available: available === undefined ? cur.available : available !== false
   };
 
@@ -65,6 +67,7 @@ export async function PUT(
       price_cad = ${merged.price_cad as number},
       description_fr = ${merged.description_fr as string | null},
       description_en = ${merged.description_en as string | null},
+      image = ${merged.image as string | null},
       available = ${merged.available as boolean},
       updated_at = NOW()
     WHERE slug = ${slug}

@@ -38,6 +38,7 @@ export async function POST(request: NextRequest) {
     price_cad,
     description_fr,
     description_en,
+    image,
     available
   } = body;
 
@@ -47,10 +48,10 @@ export async function POST(request: NextRequest) {
 
   await sql!`
     INSERT INTO menu_items
-      (slug, category, name_fr, name_en, price_cad, description_fr, description_en, available)
+      (slug, category, name_fr, name_en, price_cad, description_fr, description_en, image, available)
     VALUES
       (${slug}, ${category}, ${name_fr}, ${name_en || null}, ${price_cad},
-       ${description_fr || null}, ${description_en || null}, ${available !== false})
+       ${description_fr || null}, ${description_en || null}, ${image || null}, ${available !== false})
   `;
   return NextResponse.json({ok: true, slug});
 }

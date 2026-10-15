@@ -1,6 +1,6 @@
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
-import {getCategories, categoryName} from '@/lib/menu';
+import {getCategories, getItemsByCategory, categoryName} from '@/lib/menu';
 
 export default async function MenuPage({
   params
@@ -11,6 +11,13 @@ export default async function MenuPage({
   setRequestLocale(locale);
   const t = await getTranslations('menu');
   const categories = await getCategories();
+  // 카테고리 대표 이미지: 각 카테고리의 첫 번째 메뉴 이미지
+  const covers = await Promise.all(
+    categories.map(async (cat) => {
+      const items = await getItemsByCategory(cat.slug);
+      return items.find((i) => i.image)?.image || null;
+    })
+  );
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
@@ -19,16 +26,28 @@ export default async function MenuPage({
 
       <h2 className="mt-10 text-xl font-semibold">{t('categories')}</h2>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {categories.map((cat) => (
+        {categories.map((cat, idx) => (
           <Link
             key={cat.slug}
             href={`/menu/${cat.slug}`}
-            className="rounded-2xl border p-6 transition hover:border-red-700 hover:shadow-md"
+            className="overflow-hidden rounded-2xl border transition hover:border-red-700 hover:shadow-md"
           >
-            <p className="text-lg font-semibold">{categoryName(cat, locale)}</p>
-            <p className="mt-1 text-sm text-neutral-500">
-              {cat.item_count} {t('items')}
-            </p>
+            {covers[idx] && (
+              <img
+                src={covers[idx]!}
+                alt={categoryName(cat, locale)}
+                className="aspect-[16/9] w-full object-cover"
+                loading="lazy"
+              />
+            )}
+            <div className="p-6">
+              <p className="text-lg font-semibold">
+                {categoryName(cat, locale)}
+              </p>
+              <p className="mt-1 text-sm text-neutral-500">
+                {cat.item_count} {t('items')}
+              </p>
+            </div>
           </Link>
         ))}
       </div>

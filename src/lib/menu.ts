@@ -19,6 +19,7 @@ export interface MenuItem {
   price_cad: number;
   description_fr: string | null;
   description_en: string | null;
+  image: string | null;
   available: boolean;
 }
 
@@ -44,7 +45,7 @@ export async function getMenuItems(): Promise<MenuItem[]> {
     const rows = await sql`
       SELECT slug, category, name_fr, name_en,
              price_cad::float AS price_cad,
-             description_fr, description_en, available
+             description_fr, description_en, image, available
       FROM menu_items
       ORDER BY category, sort_order
     `;

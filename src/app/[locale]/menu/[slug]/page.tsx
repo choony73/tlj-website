@@ -44,12 +44,20 @@ export default async function MenuSlugPage({
             <Link
               key={item.slug}
               href={`/menu/${item.slug}`}
-              className="flex items-start justify-between gap-4 rounded-2xl border p-5 transition hover:border-red-700 hover:shadow-md"
+              className="flex items-center gap-4 rounded-2xl border p-4 transition hover:border-red-700 hover:shadow-md"
             >
-              <div>
+              {item.image && (
+                <img
+                  src={item.image}
+                  alt={itemName(item, locale)}
+                  className="h-20 w-20 shrink-0 rounded-xl object-cover"
+                  loading="lazy"
+                />
+              )}
+              <div className="min-w-0 flex-1">
                 <p className="font-semibold">{itemName(item, locale)}</p>
                 {itemDescription(item, locale) && (
-                  <p className="mt-1 text-sm text-neutral-600">
+                  <p className="mt-1 line-clamp-2 text-sm text-neutral-600">
                     {itemDescription(item, locale)}
                   </p>
                 )}
@@ -87,6 +95,13 @@ export default async function MenuSlugPage({
           <p className="mt-1 text-sm text-neutral-500">
             {categoryName(cat, locale)}
           </p>
+        )}
+        {item.image && (
+          <img
+            src={item.image}
+            alt={itemName(item, locale)}
+            className="mt-6 aspect-[4/3] w-full rounded-2xl object-cover"
+          />
         )}
         {itemDescription(item, locale) && (
           <p className="mt-4 text-neutral-700">

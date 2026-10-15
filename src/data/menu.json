@@ -82,7 +82,8 @@
       "price_cad": 7.99,
       "description_fr": "Jeunes fèves de soja légèrement salées et cuites à la vapeur",
       "description_en": "Lightly salted young soybeans, steamed",
-      "available": true
+      "available": true,
+      "image": "/images/menu/edamame.png"
     },
     {
       "slug": "gyoza",
@@ -92,7 +93,8 @@
       "price_cad": 8.99,
       "description_fr": "Dumplings japonais croustillants frits farcis de bœuf ou légumes assaisonnés (6 pièces)",
       "description_en": "Crispy pan-fried Japanese dumplings stuffed with seasoned beef or vegetables (6 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/gyoza.png"
     },
     {
       "slug": "agaedashi-tofu",
@@ -102,7 +104,8 @@
       "price_cad": 9.99,
       "description_fr": "Tofu légèrement enrobé de pâte et frit avec sauce savoureuse maison",
       "description_en": "Lightly battered and fried tofu with savoury homemade sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/agaedashi-tofu.png"
     },
     {
       "slug": "takoyaki",
@@ -112,7 +115,8 @@
       "price_cad": 12.99,
       "description_fr": "Boulettes japonaises de poulpe, croustillantes à l'extérieur et moelleuses à l'intérieur, garnies de sauce savoureuse et de flocons de bonite",
       "description_en": "Japanese octopus balls, crispy outside and soft inside, topped with savoury sauce and bonito flakes",
-      "available": true
+      "available": true,
+      "image": "/images/menu/takoyaki.png"
     },
     {
       "slug": "potato-korokke",
@@ -122,7 +126,8 @@
       "price_cad": 8.99,
       "description_fr": "Purée de pommes de terre à la japonaise, panée et frite.",
       "description_en": "Japanese-style mashed potato, breaded and deep-fried",
-      "available": true
+      "available": true,
+      "image": "/images/menu/potato-korokke.png"
     },
     {
       "slug": "rouleaux-de-printemps",
@@ -132,7 +137,8 @@
       "price_cad": 8.99,
       "description_fr": "Rouleaux de légumes frits",
       "description_en": "Fried vegetable rolls",
-      "available": true
+      "available": true,
+      "image": "/images/menu/rouleaux-de-printemps.png"
     },
     {
       "slug": "house-salad",
@@ -142,7 +148,8 @@
       "price_cad": 8.99,
       "description_fr": "Salade de romaine avec vinaigrette au gingembre",
       "description_en": "Romaine salad with ginger dressing",
-      "available": true
+      "available": true,
+      "image": "/images/menu/house-salad.png"
     },
     {
       "slug": "wakame-salad",
@@ -152,7 +159,8 @@
       "price_cad": 8.99,
       "description_fr": "Salade d'algues wakame avec concombre et sauce ponzu",
       "description_en": "Wakame seaweed salad with cucumber and ponzu sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/wakame-salad.png"
     },
     {
       "slug": "lobster-salad",
@@ -162,7 +170,8 @@
       "price_cad": 27.99,
       "description_fr": "Salade avec queue de homard frite et vinaigrette au gingembre",
       "description_en": "Salad with fried lobster tail and ginger dressing",
-      "available": true
+      "available": true,
+      "image": "/images/menu/lobster-salad.png"
     },
     {
       "slug": "sushi-pizza",
@@ -172,7 +181,8 @@
       "price_cad": 14.99,
       "description_fr": "Riz à sushi frit avec choix de saumon, avocat ou crabe, légumes, mayonnaise épicée et sauce savoureuse",
       "description_en": "Fried sushi rice with your choice of salmon, avocado or crab, vegetables, spicy mayo and savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/sushi-pizza.png"
     },
     {
       "slug": "calamari-tempura",
@@ -182,7 +192,8 @@
       "price_cad": 12.99,
       "description_fr": "Tempura de calmars frits (6 pièces)",
       "description_en": "Fried calamari tempura (6 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/calamari-tempura.png"
     },
     {
       "slug": "shrimp-tempura",
@@ -192,7 +203,8 @@
       "price_cad": 13.99,
       "description_fr": "Crevettes légèrement enrobées de pâte et frites, croustillantes et dorées (5 pièces)",
       "description_en": "Lightly battered and fried shrimp, crispy and golden (5 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/shrimp-tempura.png"
     },
     {
       "slug": "mix-tempura",
@@ -202,7 +214,8 @@
       "price_cad": 14.99,
       "description_fr": "Assortiment de tempura frits (6 pièces)",
       "description_en": "Assorted fried tempura (6 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/mix-tempura.png"
     },
     {
       "slug": "soft-shell-crab-tempura",
@@ -212,7 +225,8 @@
       "price_cad": 16.99,
       "description_fr": "Tempura de crabe à carapace molle frit",
       "description_en": "Fried soft shell crab tempura",
-      "available": true
+      "available": true,
+      "image": "/images/menu/soft-shell-crab-tempura.png"
     },
     {
       "slug": "tempura-de-legumes",
@@ -222,7 +236,8 @@
       "price_cad": 11.99,
       "description_fr": "Assortiment de légumes frits en tempura (6 pièces)",
       "description_en": "Assorted fried vegetable tempura (6 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/tempura-de-legumes.png"
     },
     {
       "slug": "tempura-de-patate-douce",
@@ -232,7 +247,8 @@
       "price_cad": 9.99,
       "description_fr": "Tempura de patate douce frit (5 pièces)",
       "description_en": "Fried sweet potato tempura (5 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/tempura-de-patate-douce.png"
     },
     {
       "slug": "miso-soup",
@@ -242,7 +258,8 @@
       "price_cad": 3.99,
       "description_fr": "Soupe miso avec ciboulettes et algues",
       "description_en": "Miso soup with green onions and seaweed",
-      "available": true
+      "available": true,
+      "image": "/images/menu/miso-soup.png"
     },
     {
       "slug": "gyoza-soup",
@@ -252,7 +269,8 @@
       "price_cad": 7.99,
       "description_fr": "Soupe avec des raviolis japonais farcis de légumes",
       "description_en": "Soup with Japanese dumplings stuffed with vegetables",
-      "available": true
+      "available": true,
+      "image": "/images/menu/gyoza-soup.png"
     },
     {
       "slug": "seafood-miso-soup",
@@ -262,7 +280,8 @@
       "price_cad": 9.99,
       "description_fr": "Fruits de mer frais et légumes dans un bouillon miso",
       "description_en": "Fresh seafood and vegetables in miso broth",
-      "available": true
+      "available": true,
+      "image": "/images/menu/seafood-miso-soup.png"
     },
     {
       "slug": "spicy-seafood-miso-soup",
@@ -272,7 +291,8 @@
       "price_cad": 9.99,
       "description_fr": "Fruits de mer frais et légumes dans un bouillon miso épicé",
       "description_en": "Fresh seafood and vegetables in spicy miso broth",
-      "available": true
+      "available": true,
+      "image": "/images/menu/spicy-seafood-miso-soup.png"
     },
     {
       "slug": "bulgogi-soup",
@@ -282,7 +302,8 @@
       "price_cad": 22.99,
       "description_fr": "Soupe avec bœuf mariné, légumes et nouilles de verre dans un bouillon riche et profond",
       "description_en": "Soup with marinated beef, vegetables and glass noodles in a rich, deep broth",
-      "available": true
+      "available": true,
+      "image": "/images/menu/bulgogi-soup.png"
     },
     {
       "slug": "soupe-aux-os-de-porc-gamjatang",
@@ -292,7 +313,8 @@
       "price_cad": 21.99,
       "description_fr": "Soupe traditionnelle coréenne préparée avec des os de porc mijotés lentement, du porc tendre, des pommes de terre et des légumes, le tout dans un bouillon riche et savoureux, relevé d'une légère touche épicée",
       "description_en": "Traditional Korean soup made with slow-simmered pork bones, tender pork, potatoes and vegetables in a rich, savoury broth with a light spicy kick",
-      "available": true
+      "available": true,
+      "image": "/images/menu/soupe-aux-os-de-porc-gamjatang.png"
     },
     {
       "slug": "chicken-teriyaki",
@@ -302,7 +324,8 @@
       "price_cad": 21.99,
       "description_fr": "Poulet grillé & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled chicken and vegetables with teriyaki sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/chicken-teriyaki.png"
     },
     {
       "slug": "beef-teriyaki",
@@ -312,7 +335,8 @@
       "price_cad": 27.99,
       "description_fr": "Bœuf grillé & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled beef and vegetables with teriyaki sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/beef-teriyaki.png"
     },
     {
       "slug": "salmon-teriyaki",
@@ -322,7 +346,8 @@
       "price_cad": 23.99,
       "description_fr": "Saumon grillé & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled salmon and vegetables with teriyaki sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/salmon-teriyaki.png"
     },
     {
       "slug": "shrimp-teriyaki",
@@ -332,7 +357,8 @@
       "price_cad": 22.99,
       "description_fr": "Crevettes grillées & légumes avec sauce teriyaki et riz en accompagnement",
       "description_en": "Grilled shrimp and vegetables with teriyaki sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/shrimp-teriyaki.png"
     },
     {
       "slug": "bulgogi",
@@ -342,7 +368,8 @@
       "price_cad": 21.99,
       "description_fr": "Bœuf mariné sauté avec légumes dans une sauce sucrée et salée",
       "description_en": "Marinated beef stir-fried with vegetables in a sweet and savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/bulgogi.png"
     },
     {
       "slug": "chicken-bibimbap",
@@ -352,7 +379,8 @@
       "price_cad": 21.99,
       "description_fr": "Bol de riz avec légumes variés, poulet ou bœuf, œuf et sauce gochujang",
       "description_en": "Rice bowl with assorted vegetables, chicken or beef, egg and gochujang sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/chicken-bibimbap.png"
     },
     {
       "slug": "tteokbokki",
@@ -362,7 +390,8 @@
       "price_cad": 16.99,
       "description_fr": "Gâteaux de riz coréens épicés avec gâteau de poisson, légumes et œuf",
       "description_en": "Spicy Korean rice cakes with fish cake, vegetables and egg",
-      "available": true
+      "available": true,
+      "image": "/images/menu/tteokbokki.png"
     },
     {
       "slug": "kimchi",
@@ -372,7 +401,8 @@
       "price_cad": 6.99,
       "description_fr": "Chou épicé fermenté coréen maison (Kimchi végan et sans gluten)",
       "description_en": "Homemade spicy fermented Korean cabbage (vegan and gluten-free)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/kimchi.png"
     },
     {
       "slug": "pork-katsu-curry",
@@ -382,7 +412,8 @@
       "price_cad": 21.99,
       "description_fr": "Curry japonais doux et riche servi avec du riz et une escalope de porc panée et frite",
       "description_en": "Mild and rich Japanese curry served with rice and a breaded, deep-fried pork cutlet",
-      "available": true
+      "available": true,
+      "image": "/images/menu/pork-katsu-curry.png"
     },
     {
       "slug": "sweet-chili-shrimp",
@@ -392,7 +423,8 @@
       "price_cad": 22.99,
       "description_fr": "Porc frit avec légumes dans une sauce aigre-douce servi avec du ri",
       "description_en": "Fried pork with vegetables in sweet and sour sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/sweet-chili-shrimp.png"
     },
     {
       "slug": "korean-crispy-fried-chicken",
@@ -402,7 +434,8 @@
       "price_cad": 28.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/korean-crispy-fried-chicken.png"
     },
     {
       "slug": "honey-garlic-chicken",
@@ -412,7 +445,8 @@
       "price_cad": 29.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/honey-garlic-chicken.png"
     },
     {
       "slug": "golden-cheese-chicken",
@@ -422,7 +456,8 @@
       "price_cad": 29.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/golden-cheese-chicken.png"
     },
     {
       "slug": "signature-sauce-chicken",
@@ -432,7 +467,8 @@
       "price_cad": 29.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/signature-sauce-chicken.png"
     },
     {
       "slug": "three-flavor-korean-chicken",
@@ -442,7 +478,8 @@
       "price_cad": 37.99,
       "description_fr": "Poulet frit coréen croustillant avec un mélange de trois saveurs signature",
       "description_en": "Crispy Korean fried chicken with a blend of three signature flavours",
-      "available": true
+      "available": true,
+      "image": "/images/menu/three-flavor-korean-chicken.png"
     },
     {
       "slug": "fire-chicken",
@@ -452,7 +489,8 @@
       "price_cad": 13.99,
       "description_fr": "Poulet popcorn sans os avec sauce chili coréenne",
       "description_en": "Boneless popcorn chicken with Korean chili sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/fire-chicken.png"
     },
     {
       "slug": "creamy-chicken",
@@ -462,7 +500,8 @@
       "price_cad": 13.99,
       "description_fr": "Poulet popcorn sans os avec sauce crémeuse sucrée",
       "description_en": "Boneless popcorn chicken with sweet creamy sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/creamy-chicken.png"
     },
     {
       "slug": "creamy-shrimp",
@@ -472,7 +511,8 @@
       "price_cad": 13.99,
       "description_fr": "Crevettes frites avec sauce crémeuse sucrée (4 pièces)",
       "description_en": "Fried shrimp with sweet creamy sauce (4 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/creamy-shrimp.png"
     },
     {
       "slug": "crispy-chili-chiken-kampoongki",
@@ -482,7 +522,8 @@
       "price_cad": 23.99,
       "description_fr": "Poulet frit croustillant enrobé d'une sauce chili addictive servi avec du riz",
       "description_en": "Crispy fried chicken coated in an addictive chili sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/crispy-chili-chiken-kampoongki.png"
     },
     {
       "slug": "california-roll",
@@ -492,7 +533,8 @@
       "price_cad": 8.99,
       "description_fr": "Chair de crabe, avocat, concombre",
       "description_en": "Crab meat, avocado, cucumber",
-      "available": true
+      "available": true,
+      "image": "/images/menu/california-roll.png"
     },
     {
       "slug": "avocado-roll",
@@ -502,7 +544,8 @@
       "price_cad": 7.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/avocado-roll.png"
     },
     {
       "slug": "cucumber-roll",
@@ -512,7 +555,8 @@
       "price_cad": 7.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/cucumber-roll.png"
     },
     {
       "slug": "avocado-cucumber-roll",
@@ -522,7 +566,8 @@
       "price_cad": 8.99,
       "description_fr": "Avocat, concombre",
       "description_en": "Avocado, cucumber",
-      "available": true
+      "available": true,
+      "image": "/images/menu/avocado-cucumber-roll.png"
     },
     {
       "slug": "aspargus-roll",
@@ -532,7 +577,8 @@
       "price_cad": 8.99,
       "description_fr": "Asperges frites",
       "description_en": "Fried asparagus",
-      "available": true
+      "available": true,
+      "image": "/images/menu/aspargus-roll.png"
     },
     {
       "slug": "sweet-yam-roll",
@@ -542,7 +588,8 @@
       "price_cad": 9.99,
       "description_fr": "Patate douce frite",
       "description_en": "Fried sweet potato",
-      "available": true
+      "available": true,
+      "image": "/images/menu/sweet-yam-roll.png"
     },
     {
       "slug": "green-yam-roll",
@@ -552,7 +599,8 @@
       "price_cad": 13.99,
       "description_fr": "Rouleau de patate douce frit garni d’avocat",
       "description_en": "Fried sweet potato roll topped with avocado",
-      "available": true
+      "available": true,
+      "image": "/images/menu/green-yam-roll.png"
     },
     {
       "slug": "tuna-roll",
@@ -562,7 +610,8 @@
       "price_cad": 10.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/tuna-roll.png"
     },
     {
       "slug": "salmon-roll",
@@ -572,7 +621,8 @@
       "price_cad": 10.99,
       "description_fr": "Saumon frais",
       "description_en": "Fresh salmon",
-      "available": true
+      "available": true,
+      "image": "/images/menu/salmon-roll.png"
     },
     {
       "slug": "unagi-roll",
@@ -582,7 +632,8 @@
       "price_cad": 11.99,
       "description_fr": "Anguille grillée, concombre",
       "description_en": "Grilled eel, cucumber",
-      "available": true
+      "available": true,
+      "image": "/images/menu/unagi-roll.png"
     },
     {
       "slug": "phily-roll",
@@ -592,7 +643,8 @@
       "price_cad": 13.99,
       "description_fr": "Saumon fumé, avocat, fromage à la crème sur le dessus",
       "description_en": "Smoked salmon, avocado, cream cheese on top",
-      "available": true
+      "available": true,
+      "image": "/images/menu/phily-roll.png"
     },
     {
       "slug": "spicy-tuna-roll",
@@ -602,7 +654,8 @@
       "price_cad": 11.99,
       "description_fr": "Thon épicé, concombre",
       "description_en": "Spicy tuna, cucumber",
-      "available": true
+      "available": true,
+      "image": "/images/menu/spicy-tuna-roll.png"
     },
     {
       "slug": "spicy-salmon-roll",
@@ -612,7 +665,8 @@
       "price_cad": 11.99,
       "description_fr": "Saumon épicé, concombre",
       "description_en": "Spicy salmon, cucumber",
-      "available": true
+      "available": true,
+      "image": "/images/menu/spicy-salmon-roll.png"
     },
     {
       "slug": "tuna-avocado-roll",
@@ -622,7 +676,8 @@
       "price_cad": 11.99,
       "description_fr": "Thon, avocat",
       "description_en": "Tuna, avocado",
-      "available": true
+      "available": true,
+      "image": "/images/menu/tuna-avocado-roll.png"
     },
     {
       "slug": "salmon-avocado-roll",
@@ -632,7 +687,8 @@
       "price_cad": 11.99,
       "description_fr": "Saumon, avocat",
       "description_en": "Salmon, avocado",
-      "available": true
+      "available": true,
+      "image": "/images/menu/salmon-avocado-roll.png"
     },
     {
       "slug": "shrimp-avocado-roll",
@@ -642,7 +698,8 @@
       "price_cad": 10.99,
       "description_fr": "Tempura de crevettes, avocat",
       "description_en": "Shrimp tempura, avocado",
-      "available": true
+      "available": true,
+      "image": "/images/menu/shrimp-avocado-roll.png"
     },
     {
       "slug": "crispy-crunch-california-roll",
@@ -652,7 +709,8 @@
       "price_cad": 9.99,
       "description_fr": "Chair de crabe, avocat, concombre, croquant épicé",
       "description_en": "Crab meat, avocado, cucumber, spicy crunch",
-      "available": true
+      "available": true,
+      "image": "/images/menu/crispy-crunch-california-roll.png"
     },
     {
       "slug": "futo-maki-roll",
@@ -662,7 +720,8 @@
       "price_cad": 16.99,
       "description_fr": "Oeuf (Tamago), chair de crabe, concombre, Inari",
       "description_en": "Egg (tamago), crab meat, cucumber, inari",
-      "available": true
+      "available": true,
+      "image": "/images/menu/futo-maki-roll.png"
     },
     {
       "slug": "futo-maki-roll-half",
@@ -672,7 +731,8 @@
       "price_cad": 9.99,
       "description_fr": "Chair de crabe, œuf (Tamago), concombre, Inari (6 pièces)",
       "description_en": "Crab meat, egg (tamago), cucumber, inari (6 pcs)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/futo-maki-roll-half.png"
     },
     {
       "slug": "black-jack-roll-half",
@@ -682,7 +742,8 @@
       "price_cad": 10.99,
       "description_fr": "Chair de crabe, tempura de crevettes, anguille grillée, avocat, œufs de poisson, fromage à la crème sur le dessus (le rouleau entier est frit) - 6 pièces",
       "description_en": "Crab meat, shrimp tempura, grilled eel, avocado, fish roe, cream cheese on top (whole roll deep-fried) - 6 pcs",
-      "available": true
+      "available": true,
+      "image": "/images/menu/black-jack-roll-half.png"
     },
     {
       "slug": "yummy-roll",
@@ -692,7 +753,8 @@
       "price_cad": 14.99,
       "description_fr": "Patate douce frite, oignon, persil et avocat.",
       "description_en": "Fried sweet potato, onion, parsley and avocado",
-      "available": true
+      "available": true,
+      "image": "/images/menu/yummy-roll.png"
     },
     {
       "slug": "dynamite-roll",
@@ -702,7 +764,8 @@
       "price_cad": 13.99,
       "description_fr": "Tempura de crevettes, avocat, concombre, oeufs de poisson",
       "description_en": "Shrimp tempura, avocado, cucumber, fish roe",
-      "available": true
+      "available": true,
+      "image": "/images/menu/dynamite-roll.png"
     },
     {
       "slug": "green-dragon-roll",
@@ -712,7 +775,8 @@
       "price_cad": 15.99,
       "description_fr": "Tempura de crevettes, avocat, concombre, avocat sur le dessus, oeufs de poisson",
       "description_en": "Shrimp tempura, avocado, cucumber, avocado on top, fish roe",
-      "available": true
+      "available": true,
+      "image": "/images/menu/green-dragon-roll.png"
     },
     {
       "slug": "red-dragon-roll",
@@ -722,7 +786,8 @@
       "price_cad": 17.99,
       "description_fr": "Tempura de crevettes, avocat, concombre, saumon sur le dessus",
       "description_en": "Shrimp tempura, avocado, cucumber, salmon on top",
-      "available": true
+      "available": true,
+      "image": "/images/menu/red-dragon-roll.png"
     },
     {
       "slug": "black-dragon-roll",
@@ -732,7 +797,8 @@
       "price_cad": 18.99,
       "description_fr": "Tempura de crevettes, avocat, concombre, anguille grillée sur le dessus, oeufs de poisson",
       "description_en": "Shrimp tempura, avocado, cucumber, grilled eel on top, fish roe",
-      "available": true
+      "available": true,
+      "image": "/images/menu/black-dragon-roll.png"
     },
     {
       "slug": "black-jack-roll",
@@ -742,7 +808,8 @@
       "price_cad": 19.99,
       "description_fr": "Tempura de crevettes, anguille grillée, chair de crabe, avocat, œufs de poisson, fromage à la crème sur le dessus (le rouleau entier est frit)",
       "description_en": "Shrimp tempura, grilled eel, crab meat, avocado, fish roe, cream cheese on top (whole roll deep-fried)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/black-jack-roll.png"
     },
     {
       "slug": "tokyo-roll",
@@ -752,7 +819,8 @@
       "price_cad": 17.99,
       "description_fr": "Tempura de crevettes, chair de crabe, oeuf (Tamago), avocat, concombre, œufs de poisson, fromage à la crème sur le dessus",
       "description_en": "Shrimp tempura, crab meat, egg (tamago), avocado, cucumber, fish roe, cream cheese on top",
-      "available": true
+      "available": true,
+      "image": "/images/menu/tokyo-roll.png"
     },
     {
       "slug": "crazy-roll",
@@ -762,7 +830,8 @@
       "price_cad": 18.99,
       "description_fr": "Tempura de crevettes, saumon mélangé à une sauce épicée (le rouleau entier est frit et garni de flocons de tempura)",
       "description_en": "Shrimp tempura, salmon mixed with spicy sauce (whole roll deep-fried and topped with tempura flakes)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/crazy-roll.png"
     },
     {
       "slug": "samurai-roll",
@@ -772,7 +841,8 @@
       "price_cad": 18.99,
       "description_fr": "Thon épicé, rouleau de concombre recouvert de chair de crabe, anguille grillée, avocat",
       "description_en": "Spicy tuna, cucumber roll topped with crab meat, grilled eel and avocado",
-      "available": true
+      "available": true,
+      "image": "/images/menu/samurai-roll.png"
     },
     {
       "slug": "sakura-roll",
@@ -782,7 +852,8 @@
       "price_cad": 18.99,
       "description_fr": "Crevettes cuites, chair de crabe, oeuf(Tamago), concombre, œufs de poisson, fromage à la crème sur le dessus, enveloppé dans une feuille de soja",
       "description_en": "Cooked shrimp, crab meat, egg (tamago), cucumber, fish roe, cream cheese on top, wrapped in soy paper",
-      "available": true
+      "available": true,
+      "image": "/images/menu/sakura-roll.png"
     },
     {
       "slug": "mango-dream-roll",
@@ -792,7 +863,8 @@
       "price_cad": 17.99,
       "description_fr": "Tempura de crevettes, chair de crabe, mangue, avocat, concombre, œufs de poisson, fromage à la crème sur le dessus",
       "description_en": "Shrimp tempura, crab meat, mango, avocado, cucumber, fish roe, cream cheese on top",
-      "available": true
+      "available": true,
+      "image": "/images/menu/mango-dream-roll.png"
     },
     {
       "slug": "mango-island-roll",
@@ -802,7 +874,8 @@
       "price_cad": 19.99,
       "description_fr": "Saumon, thon, chair de crabe, mangue, avocat, concombre, œufs de poisson",
       "description_en": "Salmon, tuna, crab meat, mango, avocado, cucumber, fish roe",
-      "available": true
+      "available": true,
+      "image": "/images/menu/mango-island-roll.png"
     },
     {
       "slug": "lobster-tempura-roll",
@@ -812,7 +885,8 @@
       "price_cad": 19.99,
       "description_fr": "Tempura de homard, chair de crabe, avocat, concombre, œufs de poisson",
       "description_en": "Lobster tempura, crab meat, avocado, cucumber, fish roe",
-      "available": true
+      "available": true,
+      "image": "/images/menu/lobster-tempura-roll.png"
     },
     {
       "slug": "salmon-yaki-roll",
@@ -822,7 +896,8 @@
       "price_cad": 16.99,
       "description_fr": "Chair de crabe, avocat, concombre, saumon épicé flambé sur le dessus",
       "description_en": "Crab meat, avocado, cucumber, torched spicy salmon on top",
-      "available": true
+      "available": true,
+      "image": "/images/menu/salmon-yaki-roll.png"
     },
     {
       "slug": "calamari-tempura-roll",
@@ -832,7 +907,8 @@
       "price_cad": 14.99,
       "description_fr": "Calamars frits, chair de crabe, concombre, laitue, fromage à la crème sur le dessus",
       "description_en": "Fried calamari, crab meat, cucumber, lettuce, cream cheese on top",
-      "available": true
+      "available": true,
+      "image": "/images/menu/calamari-tempura-roll.png"
     },
     {
       "slug": "chicken-teriyaki-roll",
@@ -842,7 +918,8 @@
       "price_cad": 15.99,
       "description_fr": "Poulet grillé, concombre avec sauce teriyaki",
       "description_en": "Grilled chicken, cucumber with teriyaki sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/chicken-teriyaki-roll.png"
     },
     {
       "slug": "bulgogi-roll",
@@ -852,7 +929,8 @@
       "price_cad": 15.99,
       "description_fr": "Bulgogi, laitue avec sauce teriyaki",
       "description_en": "Bulgogi, lettuce with teriyaki sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/bulgogi-roll.png"
     },
     {
       "slug": "big-veggie-roll",
@@ -862,7 +940,8 @@
       "price_cad": 15.99,
       "description_fr": "Patate douce frite, avocat, concombre, poivron et asperges",
       "description_en": "Fried sweet potato, avocado, cucumber, bell pepper and asparagus",
-      "available": true
+      "available": true,
+      "image": "/images/menu/big-veggie-roll.png"
     },
     {
       "slug": "roll-combo",
@@ -872,7 +951,8 @@
       "price_cad": 29.99,
       "description_fr": "Dynamite Roll, California Roll, Salmon Roll",
       "description_en": "Dynamite Roll, California Roll, Salmon Roll",
-      "available": true
+      "available": true,
+      "image": "/images/menu/roll-combo.png"
     },
     {
       "slug": "spicy-roll-combo",
@@ -882,7 +962,8 @@
       "price_cad": 30.99,
       "description_fr": "Spicy Dynamite Roll, Spicy California Roll, Spicy Salmon Roll",
       "description_en": "Spicy Dynamite Roll, Spicy California Roll, Spicy Salmon Roll",
-      "available": true
+      "available": true,
+      "image": "/images/menu/spicy-roll-combo.png"
     },
     {
       "slug": "veggie-roll-combo",
@@ -892,7 +973,8 @@
       "price_cad": 31.99,
       "description_fr": "Big veggie roll, sweet yam roll, avocado cucumber roll",
       "description_en": "Big veggie roll, sweet yam roll, avocado cucumber roll",
-      "available": true
+      "available": true,
+      "image": "/images/menu/veggie-roll-combo.png"
     },
     {
       "slug": "special-roll-combo",
@@ -902,7 +984,8 @@
       "price_cad": 61.99,
       "description_fr": "Green Dragon Roll, Calamari Tempura Roll, Dynamite Roll, Spicy Salmon Roll, Black Jack Roll (Demi)",
       "description_en": "Green Dragon Roll, Calamari Tempura Roll, Dynamite Roll, Spicy Salmon Roll, Black Jack Roll (half)",
-      "available": true
+      "available": true,
+      "image": "/images/menu/special-roll-combo.png"
     },
     {
       "slug": "tofu-and-vegetable-stir-fry",
@@ -912,7 +995,8 @@
       "price_cad": 19.99,
       "description_fr": "Tofu & légumes frits avec riz",
       "description_en": "Fried tofu and vegetables with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/tofu-and-vegetable-stir-fry.png"
     },
     {
       "slug": "saute-de-style-coreen",
@@ -922,7 +1006,8 @@
       "price_cad": 20.99,
       "description_fr": "Sauté de style coréen avec choix de protéine",
       "description_en": "Korean-style stir-fry with choice of protein",
-      "available": true
+      "available": true,
+      "image": "/images/menu/saute-de-style-coreen.png"
     },
     {
       "slug": "beef-donburi",
@@ -932,7 +1017,8 @@
       "price_cad": 21.99,
       "description_fr": "Bol de riz avec bœuf, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with beef, vegetables, runny egg and savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/beef-donburi.png"
     },
     {
       "slug": "chicken-donburi",
@@ -942,7 +1028,8 @@
       "price_cad": 19.99,
       "description_fr": "Bol de riz avec poulet, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with chicken, vegetables, runny egg and savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/chicken-donburi.png"
     },
     {
       "slug": "shrimp-donburi",
@@ -952,7 +1039,8 @@
       "price_cad": 19.99,
       "description_fr": "Bol de riz avec crevettes en tempura, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with shrimp tempura, vegetables, runny egg and savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/shrimp-donburi.png"
     },
     {
       "slug": "katsu-donburi",
@@ -962,7 +1050,8 @@
       "price_cad": 19.99,
       "description_fr": "Bol de riz avec escalope de porc panée et frite, légumes, œuf coulant et sauce savoureuse",
       "description_en": "Rice bowl with breaded and deep-fried pork cutlet, vegetables, runny egg and savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/katsu-donburi.png"
     },
     {
       "slug": "donkatsu",
@@ -972,7 +1061,8 @@
       "price_cad": 20.99,
       "description_fr": "Côtelette de porc ou de poulet panée, servie avec du riz et de la sauce katsu",
       "description_en": "Breaded pork or chicken cutlet served with rice and katsu sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/donkatsu.png"
     },
     {
       "slug": "cheese-katsu",
@@ -982,7 +1072,8 @@
       "price_cad": 23.99,
       "description_fr": "Escalope de porc panée et frite farcie de mozzarella servie avec du riz et sauce katsu",
       "description_en": "Breaded and deep-fried pork cutlet stuffed with mozzarella, served with rice and katsu sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/cheese-katsu.png"
     },
     {
       "slug": "fish-katsu",
@@ -992,7 +1083,8 @@
       "price_cad": 21.99,
       "description_fr": "Aiglefin pané et frit servi avec du riz et sauce katsu",
       "description_en": "Breaded and deep-fried haddock served with rice and katsu sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/fish-katsu.png"
     },
     {
       "slug": "chili-shrimp",
@@ -1002,7 +1094,8 @@
       "price_cad": 23.99,
       "description_fr": "Crevettes frites croustillantes enrobées d’une sauce chili addictive servies avec du riz",
       "description_en": "Crispy fried shrimp coated in an addictive chili sauce, served with rice",
-      "available": true
+      "available": true,
+      "image": "/images/menu/chili-shrimp.png"
     },
     {
       "slug": "donkotsu-ramen",
@@ -1012,7 +1105,8 @@
       "price_cad": 19.99,
       "description_fr": "Ramen japonais dans un bouillon riche à base d’os de porc avec chashu ou karaage, légumes et œuf",
       "description_en": "Japanese ramen in a rich pork-bone broth with chashu or karaage, vegetables and egg",
-      "available": true
+      "available": true,
+      "image": "/images/menu/donkotsu-ramen.png"
     },
     {
       "slug": "korean-ramen",
@@ -1022,7 +1116,8 @@
       "price_cad": 14.99,
       "description_fr": "Ramen coréen dans un bouillon épicé avec légumes et œuf",
       "description_en": "Korean ramen in a spicy broth with vegetables and egg",
-      "available": true
+      "available": true,
+      "image": "/images/menu/korean-ramen.png"
     },
     {
       "slug": "japanese-udon",
@@ -1032,7 +1127,8 @@
       "price_cad": 16.99,
       "description_fr": "Nouilles udon japonaises épaisses dans un bouillon savoureux avec légumes et choix de protéine",
       "description_en": "Thick Japanese udon noodles in a savoury broth with vegetables and choice of protein",
-      "available": true
+      "available": true,
+      "image": "/images/menu/japanese-udon.png"
     },
     {
       "slug": "nagasaki-jam-bong",
@@ -1042,7 +1138,8 @@
       "price_cad": 24.99,
       "description_fr": "Soupe de nouilles udon aux fruits de mer avec légumes dans un bouillon riche",
       "description_en": "Seafood udon noodle soup with vegetables in a rich broth",
-      "available": true
+      "available": true,
+      "image": "/images/menu/nagasaki-jam-bong.png"
     },
     {
       "slug": "spicy-jam-bong",
@@ -1052,7 +1149,8 @@
       "price_cad": 24.99,
       "description_fr": "Soupe épicée de nouilles udon aux fruits de mer avec légumes dans un bouillon riche",
       "description_en": "Spicy seafood udon noodle soup with vegetables in a rich broth",
-      "available": true
+      "available": true,
+      "image": "/images/menu/spicy-jam-bong.png"
     },
     {
       "slug": "king-lobster-jam-bong",
@@ -1062,7 +1160,8 @@
       "price_cad": 35.99,
       "description_fr": "Udon épicé aux fruits de mer avec homard et légumes dans un bouillon riche",
       "description_en": "Spicy seafood udon with lobster and vegetables in a rich broth",
-      "available": true
+      "available": true,
+      "image": "/images/menu/king-lobster-jam-bong.png"
     },
     {
       "slug": "vegetable-yaki-udon",
@@ -1072,7 +1171,8 @@
       "price_cad": 20.99,
       "description_fr": "Nouilles udon ou soba sautées avec légumes et choix de protéine dans une sauce savoureuse",
       "description_en": "Stir-fried udon or soba noodles with vegetables and choice of protein in a savoury sauce",
-      "available": true
+      "available": true,
+      "image": "/images/menu/vegetable-yaki-udon.png"
     },
     {
       "slug": "korean-glass-noodle",
@@ -1082,7 +1182,8 @@
       "price_cad": 18.99,
       "description_fr": "Nouilles de verre coréennes sautées avec bœuf et légumes",
       "description_en": "Korean glass noodles stir-fried with beef and vegetables",
-      "available": true
+      "available": true,
+      "image": "/images/menu/korean-glass-noodle.png"
     },
     {
       "slug": "chowmein",
@@ -1092,7 +1193,8 @@
       "price_cad": 18.99,
       "description_fr": "Nouilles sautées avec légumes et choix de protéine",
       "description_en": "Stir-fried noodles with vegetables and choice of protein",
-      "available": true
+      "available": true,
+      "image": "/images/menu/chowmein.png"
     },
     {
       "slug": "matcha-latte",
@@ -1102,7 +1204,8 @@
       "price_cad": 7.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/matcha-latte.png"
     },
     {
       "slug": "vanilla-latte",
@@ -1112,7 +1215,8 @@
       "price_cad": 6.99,
       "description_fr": null,
       "description_en": null,
-      "available": true
+      "available": true,
+      "image": "/images/menu/vanilla-latte.png"
     },
     {
       "slug": "pink-rush",
@@ -1122,7 +1226,8 @@
       "price_cad": 7.99,
       "description_fr": null,
       "description_en": "House-made sparkling beverage",
-      "available": true
+      "available": true,
+      "image": "/images/menu/pink-rush.png"
     }
   ]
 }

@@ -18,6 +18,7 @@ interface MenuInfo {
   name_fr: string;
   name_en: string | null;
   price_cad: number;
+  image: string | null;
 }
 
 const stripePromise = loadStripe(
@@ -184,11 +185,20 @@ export default function CheckoutFlow() {
           <div className="mt-3 divide-y rounded-2xl border px-4">
             {detailed.map((l) => (
               <div key={l.slug} className="flex items-center justify-between py-3">
-                <div>
-                  <p className="font-medium">{l.info && nameOf(l.info)}</p>
-                  <p className="text-sm text-neutral-500">
-                    {fmt(l.info?.price_cad || 0)}
-                  </p>
+                <div className="flex items-center gap-3">
+                  {l.info?.image && (
+                    <img
+                      src={l.info.image}
+                      alt=""
+                      className="h-12 w-12 rounded-lg object-cover"
+                    />
+                  )}
+                  <div>
+                    <p className="font-medium">{l.info && nameOf(l.info)}</p>
+                    <p className="text-sm text-neutral-500">
+                      {fmt(l.info?.price_cad || 0)}
+                    </p>
+                  </div>
                 </div>
                 <div className="flex items-center gap-2">
                   <button

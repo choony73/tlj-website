@@ -36,6 +36,7 @@ await sql`
     price_cad NUMERIC(10,2) NOT NULL,
     description_fr TEXT,
     description_en TEXT,
+    image TEXT,
     available BOOLEAN NOT NULL DEFAULT TRUE,
     sort_order INT NOT NULL DEFAULT 0,
     updated_at TIMESTAMPTZ DEFAULT NOW()
@@ -76,16 +77,19 @@ let n = 0;
 for (const item of data.items) {
   await sql`
     INSERT INTO menu_items
-      (slug, category, name_fr, name_en, price_cad, description_fr, description_en, available, sort_order)
+      (slug, category, name_fr, name_en, price_cad, description_fr, description_en, image, available, sort_order)
     VALUES
       (${item.slug}, ${item.category}, ${item.name_fr}, ${item.name_en},
        ${item.price_cad}, ${item.description_fr}, ${item.description_en},
-       ${item.available}, ${n})
+       ${item.image}, ${item.available}, ${n})
     ON CONFLICT (slug) DO UPDATE
     SET category = EXCLUDED.category,
         name_fr = EXCLUDED.name_fr,
+        name_en = EXCLUDED.name_en,
         price_cad = EXCLUDED.price_cad,
         description_fr = EXCLUDED.description_fr,
+        description_en = EXCLUDED.description_en,
+        image = EXCLUDED.image,
         available = EXCLUDED.available,
         updated_at = NOW()
   `;

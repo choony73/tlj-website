@@ -22,6 +22,7 @@ export default function MenuForm({categories, initial}: Props) {
     price_cad: initial?.price_cad?.toString() || '',
     description_fr: initial?.description_fr || '',
     description_en: initial?.description_en || '',
+    image: initial?.image || '',
     available: initial?.available !== false
   });
 
@@ -37,6 +38,7 @@ export default function MenuForm({categories, initial}: Props) {
       const payload = {
         ...form,
         price_cad: parseFloat(form.price_cad),
+        image: form.image.trim() || null,
         slug: form.slug
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
@@ -141,6 +143,22 @@ export default function MenuForm({categories, initial}: Props) {
           onChange={(e) => set('description_en', e.target.value)}
           placeholder="비워두면 불어가 표시됩니다"
         />
+      </div>
+      <div>
+        <label className={label}>이미지 URL</label>
+        <input
+          className={input}
+          value={form.image}
+          onChange={(e) => set('image', e.target.value)}
+          placeholder="/images/menu/xxx.png"
+        />
+        {form.image && (
+          <img
+            src={form.image}
+            alt=""
+            className="mt-2 h-24 w-24 rounded-xl object-cover"
+          />
+        )}
       </div>
       <label className="flex items-center gap-2 text-sm">
         <input
